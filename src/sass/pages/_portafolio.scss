@@ -1,0 +1,19 @@
+.portfolio {
+  background-color: lightgrey;
+  margin-top: 2rem;
+  height: 100vh;
+
+  &__header {
+    color: white;
+    font-family: $font;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3.5rem;
+  }
+  &__project {
+    background-color: lightblue;
+    margin-top: 2.5rem;
+  }
+}
