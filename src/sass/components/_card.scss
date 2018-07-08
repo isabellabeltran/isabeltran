@@ -1,0 +1,113 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 30rem;
+  left: 22%;
+  width: 50%; 
+  
+  &__side {
+    height: 30rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 1.5rem;
+    left: 3.7rem;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    border: .7rem solid $white; 
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($black, .15);
+
+    &--front {
+      background-color: $white;
+    }
+    &--back {
+      border: .5rem solid $white; 
+      transform: rotateY(180deg);
+      &-1 {
+        background-color: gray;
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 90%;
+    &--1 {
+      background-image: url(../images/jijenge.png);
+    }
+    &--2 {
+      background-image: url(../images/petbook.png);
+    }
+    &--3 {
+      background-image: url(../images/jijenge.png);
+    }
+    &--4 {
+      background-image: url(../images/jijenge.png);
+    }
+  }
+
+  //BACK STYLING 
+
+  &__cta {
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__heading {
+    color: $white; 
+    font-family: $font; 
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    // background-color: green;
+    // text-align: center;
+    padding-left: 2rem;
+    // float: right;
+  }
+  &__subheading {
+    display: block;
+    color: $white; 
+    font-family: $font; 
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: lighter;
+    padding-left: 2rem;
+
+  }
+  &__description {
+    color: $white; 
+    font-family: $font;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0 2rem;
+  }
+  &__links {
+    padding: 2.5rem 0;
+    text-align: center;
+
+    &--github {
+      display: inline-block;
+      margin-right: 2.5rem;
+      
+    }
+    &--demo {
+      display: inline-block;
+    }
+  }
+}

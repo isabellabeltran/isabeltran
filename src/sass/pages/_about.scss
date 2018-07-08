@@ -1,0 +1,51 @@
+.section-about {
+  background-color: $light-grey; 
+  height: 100vh;
+
+  &__container {
+    width: 95rem;
+    height: 50rem;
+    margin: 0 auto;
+
+    &--image {
+      height: 20rem;
+
+      &-1 {
+        background-color: $black;
+        height: 100%;
+        width: 50%; 
+        display: inline-block;
+      }
+      &-2 {
+        background-color: grey; 
+        height: 100%;
+        width: 50%; 
+        display: inline-block;
+      }
+    }
+
+    &--left {
+      width: 48.5%;
+      height: 100%;
+      background-color: azure;
+      display: inline-block;
+      padding: 1rem;
+      margin-right: 2.2rem;
+    }
+    &--right {
+      background-color: $white;
+      vertical-align: top;
+      width: 48.5%;
+      height: 100%;
+      display: inline-block;
+      padding: 1rem;
+    }
+    &--description {
+      font-family: $font;
+      padding: 1rem;
+      // background-color: honeydew;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+}

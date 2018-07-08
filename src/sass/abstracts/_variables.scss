@@ -4,6 +4,29 @@ FONTS
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200i,500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,400');
 
 $font: 'Fira Sans', sans-serif; 
+$font-header: 2.5rem;
+$font-subheader: 1.5rem;
+
+/*
+
+COLORS
+
+*/
+
+$white: #fff;
+$black: #000; 
+$light-grey: #eee;
+
+
+/*
+
+GRID: 
+
+*/
+
+$grid-width: 114rem; 
+$gutter-vertical: 4rem; 
+$gutter-horizontal: 2rem; 
