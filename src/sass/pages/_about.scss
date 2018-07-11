@@ -1,53 +1,97 @@
 .section-about {
   background-color: $light-grey; 
   padding-bottom: 5rem;
-  // height: 120vh;
 
   &__container {
-    width: 95rem;
-    // height: 50rem;
+    width: 110rem;
     margin: 0 auto;
 
-    &--image {
-      height: 20rem;
+    // &--image {
+    //   height: 20rem;
 
-      &-1 {
-        background-color: $black;
-        height: 100%;
-        width: 50%; 
-        display: inline-block;
-      }
-      &-2 {
-        background-color: grey; 
-        height: 100%;
-        width: 50%; 
-        display: inline-block;
-      }
-    }
+    //   &-1 {
+    //     background-color: $black;
+    //     height: 100%;
+    //     width: 50%; 
+    //     display: inline-block;
+    //   }
+    //   &-2 {
+    //     background-color: grey; 
+    //     height: 100%;
+    //     width: 50%; 
+    //     display: inline-block;
+    //   }
+    // }
 
-    &--description {
-      font-family: $font;
-      padding: 1rem;
-      // background-color: honeydew;
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
-    }
+    // &--description {
+    //   font-family: $font;
+    //   padding: 1rem;
+    //   // background-color: honeydew;
+    //   font-size: 1.5rem;
+    //   margin-top: 1.5rem;
+    // }
 
     &--left {
-      width: 48.5%;
-      // height: 100%;
-      // background-color: azure;
-      border: solid #ffff thin;
+      width: 58%;
+      // border: solid #ffff thin;
       display: inline-block;
-      padding: 1rem;
+      // padding: 1rem;
       margin-right: 2.2rem;
+    }
+
+    &--imageContentRow {
+      width: 100%;
+      // margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &--image1 {
+      width: 48%; 
+      background-image: url(../images/portrait.jpg); 
+      height: 30rem;
+      background-position: bottom;
+      background-size: cover; 
+      display: inline-block; 
+      padding: 1rem;
+    }
+    &--image2 {
+      width: 48%; 
+      background-image: url(../images/quoteExample.jpg); 
+      height: 30rem;
+      background-position: bottom;
+      background-size: cover; 
+      display: inline-block; 
+      padding: 1rem;
+    }
+    &--image3 {
+      width: 48%; 
+      background-image: url(../images/mickeyExample.jpg);  
+      height: 30rem;
+      background-position: bottom;
+      background-size: cover; 
+      display: inline-block; 
+      padding: 1rem;
+    }
+    &--content {
+      width: 48%; 
+      height: 30rem;
+      border: solid white thin; 
+      display: inline-block; 
+      vertical-align: top;
+      padding: .5rem;
+      // margin-left: 1rem;
+      // margin-right: 1rem;
+      font-size: 1.5rem;
+      color: grey;
+      letter-spacing: .2rem;
+      padding: 1rem;
     }
 
     &--right {
       background-color: $light-grey;
       border: solid #ffff thin; 
       vertical-align: top;
-      width: 48.5%;
+      width: 40%;
       // height: 100%;
       display: inline-block;
       padding: 2rem;

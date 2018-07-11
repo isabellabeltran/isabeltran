@@ -62,73 +62,133 @@
 
   //BACK STYLING 
 
-  &__cta {
-    position: absolute;
+  &__backCardContainer {
+    // position: absolute;
+    // background-color: aqua;
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
-    width: 100%;
-  }
+    // width: 100%;
 
-  &__heading {
-    color: $white; 
-    font-family: $font; 
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    padding: 1rem 0;
-    // background-color: green;
-    // text-align: center;
-    padding-left: 2rem;
-    // float: right;
-  }
-  &__subheading {
-    display: block;
-    color: $white; 
-    font-family: $font; 
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    font-weight: lighter;
-    padding-left: 2rem;
-  }
-
-  &__backContainer {
-    // background-color: aqua;
-    padding: 0 .5rem;
-
-    &--sideImage {
-      height: 20rem;
+    &--backImage {
       width: 50%;
-      background-image: url(../images/petView.png);
-      background-size: cover;
       display: inline-block;
-      background-color: aqua;
-      padding: .5rem;
-    }
-    &--description {
-      width: 50%; 
-      color: $white; 
-      font-family: $font;
-      font-size: 1.2rem;
-      font-style: italic;
-      font-weight: lighter;
-      padding: 0 2rem;
-      display: inline-block; 
+      height: 100%;
       vertical-align: top;
-      background-color: aqua;
+    }
+    &--backdescription {
+      width: 50%; 
+      display: inline-block;
+      height: 100%;
+      // background-color: whitesmoke; 
+    }
+    &--backTitle {
+      text-transform: uppercase; 
+      letter-spacing: 1.5rem;
+      color: #ffff; 
+      font-family: $font; 
+      // background-color: teal;
+      font-size: 2rem;
+      margin-top: 5rem;
+      text-align: center; 
+    }
+    &--backSubtitle {
+      text-transform: uppercase; 
+      color: #ffff; 
+      font-family: $font; 
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      font-weight: 100; 
+      text-align: center; 
+    }
+    &--backAppdescription {
+      // background-color: slateblue;
+      color: #ffff; 
+      font-family: $font; 
+      font-size: 1.3rem;
+      margin-top: 1.7rem;
+      font-weight: 100; 
+      // padding-left: 2rem;
+      display: inline-block;
+      font-style: italic;
+      text-align: center;
+    }
+    &--backLinks {
+      text-align: center; 
+      margin-top: 2rem;
     }
   }
-  &__links {
-    padding: 2.5rem 0;
-    text-align: center;
 
-    &--github {
-      display: inline-block;
-      margin-right: 2.5rem;
+
+
+  // &__heading {
+  //   color: $white; 
+  //   font-family: $font; 
+  //   letter-spacing: 1rem;
+  //   text-transform: uppercase;
+  //   font-size: 2.5rem;
+  //   padding: 1rem 0;
+  //   // background-color: green;
+  //   // text-align: center;
+  //   padding-left: 2rem;
+  //   // float: right;
+  // }
+  // &__subheading {
+  //   display: block;
+  //   color: $white; 
+  //   font-family: $font; 
+  //   font-size: 1.5rem;
+  //   padding-bottom: 1rem;
+  //   font-weight: lighter;
+  //   padding-left: 2rem;
+  // }
+
+  // &__backContainer {
+  //   // background-color: aqua;
+  //   padding: 0 .5rem;
+
+  //   &--sideImage {
+  //     height: 20rem;
+  //     width: 50%;
+  //     background-image: url(../images/petView.png);
+  //     background-size: cover;
+  //     display: inline-block;
+  //     background-color: aqua;
+  //     padding: .5rem;
+  //   }
+  //   &--description {
+  //     width: 50%; 
+  //     color: $white; 
+  //     font-family: $font;
+  //     font-size: 1.2rem;
+  //     font-style: italic;
+  //     font-weight: lighter;
+  //     padding: 0 2rem;
+  //     display: inline-block; 
+  //     vertical-align: top;
+  //     background-color: aqua;
+  //   }
+  // }
+  // &__links {
+  //   padding: 2.5rem 0;
+  //   text-align: center;
+
+  //   &--github {
+  //     display: inline-block;
+  //     margin-right: 2.5rem;
       
-    }
-    &--demo {
-      display: inline-block;
-    }
-  }
+  //   }
+  //   &--demo {
+  //     display: inline-block;
+  //   }
+  // }
+}
+
+.backCardImage {
+  background-image: url(../images/petView.png);
+  background-size: cover; 
+  height: 76%;
+  width: 95%;
+  margin-left: .9rem;
+  margin-top: 3.5rem;
 }
