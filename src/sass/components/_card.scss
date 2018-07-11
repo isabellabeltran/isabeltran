@@ -15,7 +15,7 @@
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 3px;
+    // border-radius: 3px;
     border: .7rem solid $white; 
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($black, .15);
@@ -42,12 +42,15 @@
 
   &__picture {
     background-size: cover;
-    height: 90%;
+    height: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
     &--1 {
       background-image: url(../images/jijenge.png);
     }
     &--2 {
-      background-image: url(../images/petbook.png);
+      background-image: url(../images/petFront.png);   
     }
     &--3 {
       background-image: url(../images/jijenge.png);
@@ -87,15 +90,33 @@
     padding-bottom: 1rem;
     font-weight: lighter;
     padding-left: 2rem;
-
   }
-  &__description {
-    color: $white; 
-    font-family: $font;
-    font-size: 1.2rem;
-    font-style: italic;
-    font-weight: lighter;
-    padding: 0 2rem;
+
+  &__backContainer {
+    // background-color: aqua;
+    padding: 0 .5rem;
+
+    &--sideImage {
+      height: 20rem;
+      width: 50%;
+      background-image: url(../images/petView.png);
+      background-size: cover;
+      display: inline-block;
+      background-color: aqua;
+      padding: .5rem;
+    }
+    &--description {
+      width: 50%; 
+      color: $white; 
+      font-family: $font;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: lighter;
+      padding: 0 2rem;
+      display: inline-block; 
+      vertical-align: top;
+      background-color: aqua;
+    }
   }
   &__links {
     padding: 2.5rem 0;

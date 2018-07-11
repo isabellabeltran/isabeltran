@@ -1,10 +1,11 @@
 .section-about {
   background-color: $light-grey; 
-  height: 100vh;
+  padding-bottom: 5rem;
+  // height: 120vh;
 
   &__container {
     width: 95rem;
-    height: 50rem;
+    // height: 50rem;
     margin: 0 auto;
 
     &--image {
@@ -24,27 +25,169 @@
       }
     }
 
-    &--left {
-      width: 48.5%;
-      height: 100%;
-      background-color: azure;
-      display: inline-block;
-      padding: 1rem;
-      margin-right: 2.2rem;
-    }
-    &--right {
-      background-color: $white;
-      vertical-align: top;
-      width: 48.5%;
-      height: 100%;
-      display: inline-block;
-      padding: 1rem;
-    }
     &--description {
       font-family: $font;
       padding: 1rem;
       // background-color: honeydew;
       font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    &--left {
+      width: 48.5%;
+      // height: 100%;
+      // background-color: azure;
+      border: solid #ffff thin;
+      display: inline-block;
+      padding: 1rem;
+      margin-right: 2.2rem;
+    }
+
+    &--right {
+      background-color: $light-grey;
+      border: solid #ffff thin; 
+      vertical-align: top;
+      width: 48.5%;
+      // height: 100%;
+      display: inline-block;
+      padding: 2rem;
+    }
+
+    &--mainTechTitle {
+      color: #ffff;
+      text-transform: uppercase; 
+      letter-spacing: 1rem; 
+      font-size: 2rem; 
+      font-family: Helvetica; 
+      text-align: center; 
+      margin-top: .5rem; 
+      margin-bottom: .5rem;
+    }
+
+    &--techStack {
+      // background-color: aquamarine; 
+      margin-top: 1rem;
+    }
+
+    &--techEnd {
+      // background-color: antiquewhite; 
+      text-align: center;
+    }
+
+    &--techTitle {
+      font-size: 1.5rem; 
+      color: #ffff; 
+      text-transform: uppercase; 
+      font-family: Helvetica; 
+      text-align: center; 
+      letter-spacing: .5rem;
+      margin-top: 2.5rem;
+    }
+
+    &--techLogos {
+      margin-top: 2rem;
+    }
+
+    &--firstLogoContainer {
+      // border: solid white thin; 
+    }
+
+    &--logo {
+      height: 6.5rem; 
+      width: 6.5rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--css {
+      height: 6.5rem;
+      width: 5rem;
+      margin: .5rem;
+      margin-right: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    &--reactImage {
+      height: 6rem;
+      width: 8rem;
+      margin-bottom: 1rem;
+    }
+
+    &--redux {
+      height: 7rem;
+      width: 8rem;
+    }
+
+    &--webpack {
+      height: 5.5rem;
+      width: 11rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--jasmine {
+      height: 2.5rem;
+      width: 8rem;
+      margin: .5rem;
+      margin-right: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    &--yarn {
+      height: 5.5rem;
+      width: 11rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--nodeJS {
+      height: 6rem;
+      width: 8rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--postSQL {
+      height: 4rem;
+      width: 8rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--express {
+      height: 6rem;
+      width: 8rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--git {
+      height: 3rem;
+      width: 6rem;
+      margin: .5rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    &--jest {
+      height: 4rem;
+      width: 8rem;
+      margin: .5rem;
+      margin-right: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    &--npm {
+      height: 3.5rem;
+      width: 7rem;
+      margin: .5rem;
+      margin-right: 2rem;
       margin-top: 1.5rem;
     }
   }
