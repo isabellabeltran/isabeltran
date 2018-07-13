@@ -50,13 +50,13 @@
       background-image: url(../images/jijenge.png);
     }
     &--2 {
-      background-image: url(../images/petFront.png);   
+      background-image: url(../images/foodie.png);
     }
     &--3 {
-      background-image: url(../images/jijenge.png);
+      background-image: url(../images/codesling.png);
     }
     &--4 {
-      background-image: url(../images/jijenge.png);
+      background-image: url(../images/petFront.png);
     }
   }
 
@@ -184,7 +184,37 @@
   // }
 }
 
-.backCardImage {
+.backCardImage-1 {
+  background-image: url(../images/petView.png);
+  background-size: cover; 
+  height: 76%;
+  width: 95%;
+  margin-left: .9rem;
+  margin-top: 3.5rem;
+}
+
+.backCardImage-2 {
+  background-image: url(../images/foodie2.png);
+  background-size: cover; 
+  background-position: center;
+  height: 65%;
+  width: 95%;
+  margin-left: .9rem;
+  margin-right: .9rem;
+  margin-top: 3.5rem;
+}
+
+
+.backCardImage-3 {
+  background-image: url(../images/codesling2.png);
+  background-size: cover; 
+  height: 58%;
+  width: 100%;
+  margin-left: .9rem;
+  margin-top: 5rem;
+}
+
+.backCardImage-4 {
   background-image: url(../images/petView.png);
   background-size: cover; 
   height: 76%;

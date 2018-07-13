@@ -82,8 +82,8 @@ export default class extends Component {
 
         {/* A LITTLE BIT ABOUT MYSELF */}
         </div>
-        <div className="section-about__container--right">
-          <div className="section-about__container--mainTechTitle">Technical Skills</div>
+        {/* <div className="section-about__container--right"> */}
+          {/* <div className="section-about__container--mainTechTitle">Technical Skills</div>
 
           <div className="section-about__container--techStack">
             <div className="section-about__container--techEnd">
@@ -123,8 +123,8 @@ export default class extends Component {
                 <img className="section-about__container--logo" src={babel} /> 
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
         </div>
       </section> 
 
@@ -167,7 +167,7 @@ export default class extends Component {
         <div className="row">
           <div className="card">
             <div class="card__side card__side--front">
-              <div class="card__picture card__picture--1">
+              <div class="card__picture card__picture--2">
                 &nbsp;
               </div>
             </div>
@@ -175,7 +175,7 @@ export default class extends Component {
             <div className="card__side card__side--back card__side--back-1">
               <div className="card__backCardContainer">
                 <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage"></div>
+                  <div className="backCardImage-2"></div>
                 </div>
                 <div className="card__backCardContainer--backdescription">
                   <div className="card__backCardContainer--backTitle">Foodie</div>
@@ -184,7 +184,7 @@ export default class extends Component {
                     A web app for food lovers to save money by ordering meals with people around them 
                 </div>
                 <div className="card__backCardContainer--backLinks">
-                  <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
+                  <a href="https://github.com/mdhiFoodie" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
                 </div>
               </div>
             </div>
@@ -198,14 +198,14 @@ export default class extends Component {
               <div className="row">
             <div className="card">
               <div class="card__side card__side--front">
-                <div class="card__picture card__picture--1">
+                <div class="card__picture card__picture--3">
                   &nbsp;
                 </div>
               </div>
               <div className="card__side card__side--back card__side--back-1">
                 <div className="card__backCardContainer">
                   <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage"></div>
+                  <div className="backCardImage-3"></div>
                   </div>
                   <div className="card__backCardContainer--backdescription">
                     <div className="card__backCardContainer--backTitle">Codesling</div>
@@ -214,7 +214,7 @@ export default class extends Component {
                       Game where friends race each other to complete the given algorithm 
                     </div>
                     <div className="card__backCardContainer--backLinks">
-                    <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
+                    <a href="https://github.com/LegacyDreamTeam" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
                     </div>
                   </div>
                 </div>
@@ -224,11 +224,11 @@ export default class extends Component {
         </div>
 
 
-        {/* Petbook */}
+        {/* PETBOOK */}
         <div className="row">
             <div className="card">
               <div class="card__side card__side--front">
-                <div class="card__picture card__picture--2">
+                <div class="card__picture card__picture--4">
                   &nbsp;
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default class extends Component {
               <div className="card__side card__side--back card__side--back-1">
                 <div className="card__backCardContainer">
                   <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage"></div>
+                  <div className="backCardImage-4"></div>
                   </div>
                   <div className="card__backCardContainer--backdescription">
                     <div className="card__backCardContainer--backTitle">Petbook</div>
@@ -245,7 +245,7 @@ export default class extends Component {
                         A Facebook clone that mimics its basic functionality for any kind of pet. 
                     </div>
                     <div className="card__backCardContainer--backLinks">
-                    <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
+                    <a href="https://github.com/isabellabeltran/fbClone" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
                     </div>
                   </div>
                 </div>
@@ -257,9 +257,19 @@ export default class extends Component {
       </section>
 
       <section className="section-contactMe">
-
+      <div className="section-contactMe__footerContainer">
+          <div className="section-contactMe__footerContainer--title">Follow me</div>
+          <div className="section-contactMe__footerContainer--links">
+            <a href="https://www.linkedin.com/in/isa-beltran/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="white" /></a>
+          </div>
+          <div className="section-contactMe__footerContainer--links">
+            <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
+          </div>
+          <div className="section-contactMe__footerContainer--links">
+          <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="3x" color="white" /></a>
+          </div>
+      </div>
       </section> 
-
       </div>
     )
   }

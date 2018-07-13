@@ -1,0 +1,21 @@
+.section-contactMe {
+  background-color: $light-grey;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center; 
+  &__footerContainer {
+    &--title {
+      color: #ffff; 
+      font-size: 2rem;
+      text-transform: uppercase; 
+      letter-spacing: 1rem;
+      margin-bottom: 2rem;
+      font-family: $font;
+    }
+    &--links {
+      display: inline-block;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}
