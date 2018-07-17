@@ -1,41 +1,78 @@
 .container {
+  &__navLinks {
+    // background-color: aqua;
+    text-align: center;
+    &--eachLink {
+      display: inline-block;
+      margin-right: 2rem;
+      margin-top: 2rem;
+      opacity: 0.8;
+      filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+  }
   &__image {
-    background-image: url(../images/background.jpg);
-    height: 100%; 
+    background-image: url(../images/boston.jpg);
+    height: 100vh; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 
-    &--1 {
-      color: $black; 
-      position: absolute;
-      left: 6rem;
-      top: 10rem; 
-      font-family: $font;
-      font-weight: 500;
-      font-size: 3rem;
+  }
+  &__greeting {
+    background-color: $black;
+    position: absolute;
+    // left: 22%;
+    top: 64.4%; 
+    font-family: $font;
+    // width: 70rem;
+    width: 100%;
+    height: 25rem;
+    font-weight: 500;
+    font-size: 3rem;
+    opacity: 0.9;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+    &--box {
+      height: 17rem;
+      width: 95%;
+      margin: 1.5rem auto; 
     }
-    &--2 {
-      color: $black; 
-      position: absolute;
-      left: 6rem;
-      top: 14.3rem; 
-      width: 45rem;
+    &--title {
+      color: $white; 
+      text-align: center;
+      text-transform: uppercase;
       font-family: $font;
-      font-weight: 100;
-      font-size: 2.5rem;
-      font-style: italic;
+      letter-spacing: .5rem;
+      margin-top: 3rem;
+    }
+    &--link {
+      display: inline-block;
+      border: solid #33C5EC thin;
+      border-radius: .4rem;
+      padding: 1.5rem 2rem;
+      font-size: 1.5rem;
+      color: $white; 
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font;
+      letter-spacing: .5rem;
+      margin-top: 6rem;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 20rem;
+        margin-left: 30rem;
+      }
+      &:hover {
+        border: none;
+        background-color: #33C5EC;
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+      }
     }
   }
 }
-
-// .quote {
-//   margin-top: 3rem;
-//   font-size: 2.5rem;
-//   text-align: center;
-//   font-family: $font;
-//   font-weight: 200;
-//   font-style: italic; 
-// }

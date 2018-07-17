@@ -1,13 +1,15 @@
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative;
-  height: 30rem;
-  left: 22%;
-  width: 50%; 
+  height: 43rem;
+  width: 23%;
+  display: inline-block;
+  margin-right: 2rem;
+  margin-top: 3.5rem;
+
   
   &__side {
-    height: 30rem;
+    height: 43rem;
     transition: all .8s ease;
     position: absolute;
     top: 1.5rem;
@@ -15,20 +17,17 @@
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    // border-radius: 3px;
-    border: .7rem solid $white; 
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($black, .15);
+    box-shadow: 0 2.5rem 4rem rgba($black, .15);
 
     &--front {
-      background-color: $white;
+      background-color: $black;
+      opacity: .8;
+      border: .1rem solid $white; 
     }
     &--back {
-      border: .5rem solid $white; 
+      background-color: $white;
       transform: rotateY(180deg);
-      &-1 {
-        background-color: gray;
-      }
     }
   }
 
@@ -42,183 +41,166 @@
 
   &__picture {
     background-size: cover;
-    height: 100%;
+    height: 50%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 
     &--1 {
       background-image: url(../images/jijenge.png);
+      background-position: right; 
     }
     &--2 {
       background-image: url(../images/foodie.png);
+      background-position: center;
+      margin-top: 1.8rem;
     }
     &--3 {
       background-image: url(../images/codesling.png);
+      background-position: center;
+      
     }
     &--4 {
       background-image: url(../images/petFront.png);
+      background-position: right;
+      margin-top: 1.8rem;
     }
+  }
+
+  //FRONT STYLING 
+
+  &__frontTitle {
+    text-transform: uppercase; 
+    letter-spacing: 1.2rem;
+    font-family: $font; 
+    color: $white;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    text-align: center; 
+  }
+
+  &__frontInformation {
+    border: solid #33C5EC thin;
+    width: 90%;
+    margin-left: 1.3rem;
+    margin-top: 1.8rem;
+    height: 18rem;
+  }
+
+  &__appDescription {
+    font-family: $font; 
+    max-width: 90%;
+    margin-left: 1.4rem;  
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+    font-weight: 100; 
+    display: inline-block;
+    font-style: italic;
+    text-align: center;
+    color: $white;
+    padding: 0 2rem;
   }
 
   //BACK STYLING 
 
   &__backCardContainer {
-    // position: absolute;
-    // background-color: aqua;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // width: 100%;
+    
+    &--techStack {
+      height: 50%;
+    }
 
-    &--backImage {
-      width: 50%;
-      display: inline-block;
-      height: 100%;
-      vertical-align: top;
-    }
-    &--backdescription {
-      width: 50%; 
-      display: inline-block;
-      height: 100%;
-      // background-color: whitesmoke; 
-    }
-    &--backTitle {
-      text-transform: uppercase; 
-      letter-spacing: 1.5rem;
-      color: #ffff; 
+    &--techStackTitle {
       font-family: $font; 
-      // background-color: teal;
       font-size: 2rem;
-      margin-top: 5rem;
-      text-align: center; 
-    }
-    &--backSubtitle {
-      text-transform: uppercase; 
-      color: #ffff; 
-      font-family: $font; 
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      font-weight: 100; 
-      text-align: center; 
-    }
-    &--backAppdescription {
-      // background-color: slateblue;
-      color: #ffff; 
-      font-family: $font; 
-      font-size: 1.3rem;
-      margin-top: 1.7rem;
-      font-weight: 100; 
-      // padding-left: 2rem;
-      display: inline-block;
-      font-style: italic;
+      border: .1rem solid #33C5EC;
       text-align: center;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 2.3rem; 
+      padding-left: 1rem;
     }
-    &--backLinks {
-      text-align: center; 
+
+    &--techStackLinks {
+      max-width: 90%;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &--img {
+      height: 4rem;
+      width: 5rem;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+
+      &:not(:last-child) {
+        margin-right: 1.8rem;
+      }
+    }
+
+    &--imgSocket {
+      height: 4rem;
+      width: 4rem;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+
+      &:not(:last-child) {
+        margin-right: 1.8rem;
+      }
+    }
+
+    &--imgCss {
+      height: 4rem;
+      width: 4rem;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+
+      &:not(:last-child) {
+        margin-right: 1.8rem;
+      }
+    }
+
+    &--imgPost {
+      height: 4rem;
+      width: 7rem;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+
+    &--imgStripe {
+      height: 4rem;
+      width: 6.5rem;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+
+    &--codeContainer {
+      height: 40%;
+      border: .1rem solid #33C5EC;
+      max-width: 90%;
+      margin: 0 auto;
       margin-top: 2rem;
     }
+
+    &--codeContainerTitle {
+      margin-top: 2rem;
+      font-family: $font; 
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &--codeLinks {
+      text-align: center; 
+      margin-top: 3rem;
+    }
   }
-
-
-
-  // &__heading {
-  //   color: $white; 
-  //   font-family: $font; 
-  //   letter-spacing: 1rem;
-  //   text-transform: uppercase;
-  //   font-size: 2.5rem;
-  //   padding: 1rem 0;
-  //   // background-color: green;
-  //   // text-align: center;
-  //   padding-left: 2rem;
-  //   // float: right;
-  // }
-  // &__subheading {
-  //   display: block;
-  //   color: $white; 
-  //   font-family: $font; 
-  //   font-size: 1.5rem;
-  //   padding-bottom: 1rem;
-  //   font-weight: lighter;
-  //   padding-left: 2rem;
-  // }
-
-  // &__backContainer {
-  //   // background-color: aqua;
-  //   padding: 0 .5rem;
-
-  //   &--sideImage {
-  //     height: 20rem;
-  //     width: 50%;
-  //     background-image: url(../images/petView.png);
-  //     background-size: cover;
-  //     display: inline-block;
-  //     background-color: aqua;
-  //     padding: .5rem;
-  //   }
-  //   &--description {
-  //     width: 50%; 
-  //     color: $white; 
-  //     font-family: $font;
-  //     font-size: 1.2rem;
-  //     font-style: italic;
-  //     font-weight: lighter;
-  //     padding: 0 2rem;
-  //     display: inline-block; 
-  //     vertical-align: top;
-  //     background-color: aqua;
-  //   }
-  // }
-  // &__links {
-  //   padding: 2.5rem 0;
-  //   text-align: center;
-
-  //   &--github {
-  //     display: inline-block;
-  //     margin-right: 2.5rem;
-      
-  //   }
-  //   &--demo {
-  //     display: inline-block;
-  //   }
-  // }
-}
-
-.backCardImage-1 {
-  background-image: url(../images/petView.png);
-  background-size: cover; 
-  height: 76%;
-  width: 95%;
-  margin-left: .9rem;
-  margin-top: 3.5rem;
-}
-
-.backCardImage-2 {
-  background-image: url(../images/foodie2.png);
-  background-size: cover; 
-  background-position: center;
-  height: 65%;
-  width: 95%;
-  margin-left: .9rem;
-  margin-right: .9rem;
-  margin-top: 3.5rem;
-}
-
-
-.backCardImage-3 {
-  background-image: url(../images/codesling2.png);
-  background-size: cover; 
-  height: 58%;
-  width: 100%;
-  margin-left: .9rem;
-  margin-top: 5rem;
-}
-
-.backCardImage-4 {
-  background-image: url(../images/petView.png);
-  background-size: cover; 
-  height: 76%;
-  width: 95%;
-  margin-left: .9rem;
-  margin-top: 3.5rem;
 }

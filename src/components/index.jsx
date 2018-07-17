@@ -24,6 +24,7 @@ import npm from '../images/npm.png';
 import webpack from '../images/webpack.png';
 import yarn from '../images/yarn.png'; 
 import babel from '../images/babel.png'; 
+import Stripe from '../images/stripe.png';
 
 
 export default class extends Component {
@@ -36,240 +37,261 @@ export default class extends Component {
     return (
       <div className="container">
         <div className="container__image">
-          <div className="container__image--1">
-            Hi, I’m Isabella.
-          </div>
-          <div className="container__image--2">
-            An eager Software Engineer ready to take on new challenges
+          <div className="container__greeting">
+            <div className="container__greeting--box">
+              <div className="container__greeting--title">Do you want to...</div>
+              <div className="container__greeting--link"><a href="#about">See who I am?</a></div>
+              <div className="container__greeting--link"><a href="#portfolio">See my work</a></div>
+            </div>
           </div>
         </div>
-
-      <section className="section-about">
+        <section className="section-inBetween">
+        <div className="section-inBetween__container">
+        
+        </div>
+      </section>
+      <section id="about">
+      <div className="section-about">
         <div className="heading-primary">
           A little bit about myself
         </div>
+
         <div className="section-about__container">
-        <div className="section-about__container--left">
-          <div className="section-about__container--imageContentRow">
-            <div className="section-about__container--image1">
-              
-            </div>
-            <div className="section-about__container--content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-          fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-            </div>
-          </div>
-          <div className="section-about__container--imageContentRow">
-            <div className="section-about__container--content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-          fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-          
-            </div>
-            <div className="section-about__container--image2">
-              
-            </div>
-          </div>
-          <div className="section-about__container--imageContentRow">
-            <div className="section-about__container--image3">
-              
-            </div>
-            <div className="section-about__container--content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-          fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
+          <div className="section-about__container--left">
 
+            <div className="section-about__container--imageContentRow">
+              <div className="section-about__container--image1">
+              </div>
+              <div className="section-about__container--content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
+                fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
+              </div>
+            </div>
+
+            <div className="section-about__container--imageContentRow">
+              <div className="section-about__container--content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
+                fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
+              </div>
+              <div className="section-about__container--image2"> 
+              </div>
             </div>
           </div>
-
-        {/* A LITTLE BIT ABOUT MYSELF */}
         </div>
-        {/* <div className="section-about__container--right"> */}
-          {/* <div className="section-about__container--mainTechTitle">Technical Skills</div>
-
-          <div className="section-about__container--techStack">
-            <div className="section-about__container--techEnd">
-            <div className="section-about__container--firstLogoContainer">
-                <img className="section-about__container--logo" src={Javascript} /> 
-                <img className="section-about__container--logo" src={jQuery} /> 
-                <img className="section-about__container--reactImage" src={reactImage} /> 
-                <img className="section-about__container--redux" src={Redux} /> 
-              </div>
-              <div className="section-about__container--firstLogoContainer">
-                <img className="section-about__container--logo" src={Sass} /> 
-                <img className="section-about__container--css" src={css} /> 
-                <img className="section-about__container--logo" src={html} /> 
-                <img className="section-about__container--nodeJS" src={nodeJS} /> 
-              </div>
-              <div className="section-about__container--firstLogoContainer">
-              <img className="section-about__container--express" src={expressJS} /> 
-                <img className="section-about__container--logo" src={mysql} /> 
-                <img className="section-about__container--logo" src={mongo} /> 
-                <img className="section-about__container--postSQL" src={postSQL} /> 
-              </div>
-              <div className="section-about__container--firstLogoContainer">
-                <img className="section-about__container--logo" src={redis} /> 
-                <img className="section-about__container--logo" src={socket} /> 
-                <img className="section-about__container--logo" src={mocha} /> 
-                <img className="section-about__container--logo" src={chai} /> 
-              </div>
-              <div className="section-about__container--firstLogoContainer">
-                <img className="section-about__container--jasmine" src={jasmine} /> 
-                <img className="section-about__container--jest" src={jest} /> 
-                <img className="section-about__container--git" src={git} /> 
-                <img className="section-about__container--npm" src={npm} /> 
-              </div>
-              <div className="section-about__container--firstLogoContainer">
-                <img className="section-about__container--webpack" src={webpack} /> 
-                <img className="section-about__container--yarn" src={yarn} />
-                <img className="section-about__container--logo" src={babel} /> 
-              </div>
-            </div>
-          </div> */}
-        {/* </div> */}
         </div>
       </section> 
 
+      {/* <section className="section-inBetween">
+        <div className="section-inBetween__container">
+        
+        </div>
+      </section> */}
+
         {/* PROJECTS */}
 
-      <section className="section-projects">
+      <section id="portfolio">
+      <div className="section-projects">
+      <div className="section-projects__container">
       <div className="section-projects__image">
         <div className="heading-primary">
           here's what I've done so far 
         </div>
-        <div className="row">
-          <div className="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--1">
-                &nbsp;
-              </div>
+
+      <div className="projectRow">
+        <div className="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--1">
+              &nbsp;
             </div>
-            <div className="card__side card__side--back card__side--back-1">
-              <div className="card__backCardContainer">
-                <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage"></div>
-                </div>
-                <div className="card__backCardContainer--backdescription">
-                  <div className="card__backCardContainer--backTitle">Jijenge</div>
-                  <div className="card__backCardContainer--backSubtitle">REACT | NODE | EXPRESS | STRIPE </div>
-                  <div className="card__backCardContainer--backAppdescription">
-                    A website created for an organization that teaches computer science fundamentals to orphans in the slums of Nairobi Kenya
-                </div>
-                <div className="card__backCardContainer--backLinks">
-                  <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
-                </div>
+            <div className="card__frontInformation">
+              <div class="card__frontTitle">
+                Jijenge
+              </div>
+              <div className="card__appDescription">
+                A website created for an organization that teaches computer science fundamentals to orphans in the slums of Nairobi Kenya
               </div>
             </div>
           </div>
-          </div>
+
+          <div className="card__side card__side--back">
+
+            <div className="card__backCardContainer">
+                <div className="card__backCardContainer--techStack">
+                  <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
+                  <div className="card__backCardContainer--techStackLinks">
+                    <img className="card__backCardContainer--img" src={reactImage} /> 
+                    <img className="card__backCardContainer--img" src={Sass} /> 
+                    <img className="card__backCardContainer--imgStripe" src={Stripe} /> 
+                  </div>
+                  <div className="card__backCardContainer--techStackLinks">
+                    <img className="card__backCardContainer--img" src={nodeJS} /> 
+                    <img className="card__backCardContainer--img" src={expressJS} /> 
+                    <img className="card__backCardContainer--imgPost" src={postSQL} /> 
+                  </div>
+                </div>
+
+                <div className="card__backCardContainer--codeContainer">
+                  <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
+                  <div className="card__backCardContainer--codeLinks">
+                  <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
+                  </div>
+                </div>
+            </div>
+
+        </div>
       </div>
 
-        {/* FOODIE */}
+          {/* FOODIE */}
 
-        <div className="row">
-          <div className="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">
-                &nbsp;
+        <div className="card">
+          <div class="card__side card__side--front">
+            <div className="card__frontInformation">
+              <div class="card__frontTitle">
+                Foodie
+              </div>
+              <div className="card__appDescription">
+                A web app for food lovers to save money by ordering meals with people around them 
               </div>
             </div>
-
-            <div className="card__side card__side--back card__side--back-1">
-              <div className="card__backCardContainer">
-                <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage-2"></div>
-                </div>
-                <div className="card__backCardContainer--backdescription">
-                  <div className="card__backCardContainer--backTitle">Foodie</div>
-                  <div className="card__backCardContainer--backSubtitle">REACT | REDUX | NODE | EXPRESS | REDIS | MONGO | POSTGRESQL </div>
-                  <div className="card__backCardContainer--backAppdescription">
-                    A web app for food lovers to save money by ordering meals with people around them 
-                </div>
-                <div className="card__backCardContainer--backLinks">
-                  <a href="https://github.com/mdhiFoodie" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
-                </div>
-              </div>
+            <div class="card__picture card__picture--2">
+              &nbsp;
             </div>
           </div>
 
+          <div className="card__side card__side--back">
+            <div className="card__backCardContainer">
+              <div className="card__backCardContainer--techStack">
+              <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
+              <div className="card__backCardContainer--techStackLinks">
+                <img className="card__backCardContainer--img" src={reactImage} /> 
+                <img className="card__backCardContainer--img" src={Sass} /> 
+                <img className="card__backCardContainer--img" src={Redux} /> 
+              </div>
+              <div className="card__backCardContainer--techStackLinks">
+                <img className="card__backCardContainer--img" src={nodeJS} /> 
+                <img className="card__backCardContainer--img" src={expressJS} /> 
+                <img className="card__backCardContainer--imgPost" src={postSQL} /> 
+              </div>
+              <div className="card__backCardContainer--techStackLinks">
+              <img className="card__backCardContainer--img" src={redis} /> 
+              <img className="card__backCardContainer--img" src={mongo} /> 
+              </div>
+            </div>
+            <div className="card__backCardContainer--codeContainer">
+              <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
+              <div className="card__backCardContainer--codeLinks">
+                <a href="https://github.com/mdhiFoodie" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* CODESLING */}
+          {/* CODESLING */}
 
-              <div className="row">
-            <div className="card">
+          <div className="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">
                   &nbsp;
                 </div>
+                <div className="card__frontInformation">
+                <div class="card__frontTitle">
+                Codesling
               </div>
-              <div className="card__side card__side--back card__side--back-1">
-                <div className="card__backCardContainer">
-                  <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage-3"></div>
+              <div className="card__appDescription">
+                Game where friends race each other to complete the given algorithm 
+              </div>
+              </div>
+              </div>
+              
+              <div className="card__side card__side--back">
+              <div className="card__backCardContainer">
+                <div className="card__backCardContainer--techStack">
+                  <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
+                  <div className="card__backCardContainer--techStackLinks">
+                    <img className="card__backCardContainer--img" src={reactImage} /> 
+                    <img className="card__backCardContainer--imgCss" src={css} /> 
+                    <img className="card__backCardContainer--imgSocket" src={socket} /> 
                   </div>
-                  <div className="card__backCardContainer--backdescription">
-                    <div className="card__backCardContainer--backTitle">Codesling</div>
-                    <div className="card__backCardContainer--backSubtitle">REACT | NODE | EXPRESS | SOCKET.IO</div>
-                    <div className="card__backCardContainer--backAppdescription">
-                      Game where friends race each other to complete the given algorithm 
-                    </div>
-                    <div className="card__backCardContainer--backLinks">
-                    <a href="https://github.com/LegacyDreamTeam" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
-                    </div>
+                  <div className="card__backCardContainer--techStackLinks">
+                    <img className="card__backCardContainer--img" src={nodeJS} /> 
+                    <img className="card__backCardContainer--img" src={expressJS} /> 
+                    <img className="card__backCardContainer--imgPost" src={postSQL} /> 
                   </div>
                 </div>
-              </div>
 
+                <div className="card__backCardContainer--codeContainer">
+                  <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
+                  <div className="card__backCardContainer--codeLinks">
+                  <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
+                  </div>
+                </div>
             </div>
-        </div>
+              </div>
+            </div>
 
+            {/* PETBOOK */}
 
-        {/* PETBOOK */}
-        <div className="row">
-            <div className="card">
+          <div className="card">
               <div class="card__side card__side--front">
+                <div className="card__frontInformation">
+                  <div class="card__frontTitle">
+                    Petbook
+                  </div>
+                  <div className="card__appDescription">
+                    A Facebook clone that mimics its basic functionality.
+                  </div>
+                </div>
                 <div class="card__picture card__picture--4">
                   &nbsp;
                 </div>
               </div>
 
-              <div className="card__side card__side--back card__side--back-1">
-                <div className="card__backCardContainer">
-                  <div className="card__backCardContainer--backImage">
-                  <div className="backCardImage-4"></div>
+              <div className="card__side card__side--back">
+              
+              <div className="card__backCardContainer">
+                <div className="card__backCardContainer--techStack">
+                  <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
+                  <div className="card__backCardContainer--techStackLinks">
+                    <img className="card__backCardContainer--img" src={reactImage} /> 
+                    <img className="card__backCardContainer--imgCss" src={css} /> 
                   </div>
-                  <div className="card__backCardContainer--backdescription">
-                    <div className="card__backCardContainer--backTitle">Petbook</div>
-                    <div className="card__backCardContainer--backSubtitle">REACT | NODE | EXPRESS | MYSQL</div>
-                    <div className="card__backCardContainer--backAppdescription">
-                        A Facebook clone that mimics its basic functionality for any kind of pet. 
-                    </div>
-                    <div className="card__backCardContainer--backLinks">
-                    <a href="https://github.com/isabellabeltran/fbClone" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
-                    </div>
+                  <div className="card__backCardContainer--techStackLinks">
+                    <img className="card__backCardContainer--img" src={nodeJS} /> 
+                    <img className="card__backCardContainer--img" src={expressJS} /> 
+                    <img className="card__backCardContainer--imgPost" src={mysql} /> 
                   </div>
                 </div>
-              </div>
 
+                <div className="card__backCardContainer--codeContainer">
+                  <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
+                  <div className="card__backCardContainer--codeLinks">
+                  <a href="https://github.com/isabellabeltran/fbClone" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
+                  </div>
+                </div>
             </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </section>
-
-      <section className="section-contactMe">
-      <div className="section-contactMe__footerContainer">
-          <div className="section-contactMe__footerContainer--title">Follow me</div>
-          <div className="section-contactMe__footerContainer--links">
-            <a href="https://www.linkedin.com/in/isa-beltran/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="white" /></a>
-          </div>
-          <div className="section-contactMe__footerContainer--links">
-            <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
-          </div>
-          <div className="section-contactMe__footerContainer--links">
-          <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="3x" color="white" /></a>
-          </div>
       </div>
-      </section> 
+        </section>
+
+        {/* <section className="section-contactMe">
+          <div className="section-contactMe__footerContainer">
+            <div className="section-contactMe__footerContainer--title">Contact me</div>
+            <div className="section-contactMe__footerContainer--links">
+              <a href="https://www.linkedin.com/in/isa-beltran/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="white" /></a>
+            </div>
+            <div className="section-contactMe__footerContainer--links">
+              <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
+            </div>
+            <div className="section-contactMe__footerContainer--links">
+            <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="3x" color="white" /></a>
+            </div>
+          </div>
+        </section>  */}
       </div>
     )
   }
