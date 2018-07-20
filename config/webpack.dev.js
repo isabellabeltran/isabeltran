@@ -13,7 +13,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: ["babel-polyfill", "./src/main.js"]
+    main:  "./src/main.js"
   },
   mode: "development",
   output: {

@@ -108,12 +108,12 @@ export default class extends Component {
 
       <div className="projectRow">
         <div className="card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--1">
+          <div className="card__side card__side--front">
+            <div className="card__picture card__picture--1">
               &nbsp;
             </div>
             <div className="card__frontInformation">
-              <div class="card__frontTitle">
+              <div className="card__frontTitle">
                 Jijenge
               </div>
               <div className="card__appDescription">
@@ -153,16 +153,16 @@ export default class extends Component {
           {/* FOODIE */}
 
         <div className="card">
-          <div class="card__side card__side--front">
+          <div className="card__side card__side--front">
             <div className="card__frontInformation">
-              <div class="card__frontTitle">
+              <div className="card__frontTitle">
                 Foodie
               </div>
               <div className="card__appDescription">
                 A web app for food lovers to save money by ordering meals with people around them 
               </div>
             </div>
-            <div class="card__picture card__picture--2">
+            <div className="card__picture card__picture--2">
               &nbsp;
             </div>
           </div>
@@ -204,7 +204,7 @@ export default class extends Component {
                   &nbsp;
                 </div>
                 <div className="card__frontInformation">
-                <div class="card__frontTitle">
+                <div className="card__frontTitle">
                 Codesling
               </div>
               <div className="card__appDescription">
@@ -242,16 +242,16 @@ export default class extends Component {
             {/* PETBOOK */}
 
           <div className="card">
-              <div class="card__side card__side--front">
+              <div className="card__side card__side--front">
                 <div className="card__frontInformation">
-                  <div class="card__frontTitle">
+                  <div className="card__frontTitle">
                     Petbook
                   </div>
                   <div className="card__appDescription">
                     A Facebook clone that mimics its basic functionality.
                   </div>
                 </div>
-                <div class="card__picture card__picture--4">
+                <div className="card__picture card__picture--4">
                   &nbsp;
                 </div>
               </div>
