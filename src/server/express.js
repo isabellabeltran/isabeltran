@@ -24,7 +24,7 @@ if (!isProd) {
 const staticMiddleware = express.static('dist'); 
 server.use(staticMiddleware);
 
-server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
+// server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
 
 const PORT = process.env.PORT || 2000;
 

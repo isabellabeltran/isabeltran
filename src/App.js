@@ -1,7 +1,6 @@
 import React from 'react'; 
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import { BrowserRouter } from 'react-router-dom';
 import Application from './components/index.jsx'; 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,11 +11,9 @@ library.add(fab, faCheckSquare, faSearch, faPaw, faVideo, faEnvelope, faFileAlt)
 
 function render(Component) {
   ReactDOM.render(
-    <BrowserRouter> 
     <AppContainer>
       <Component />
-    </AppContainer>
-    </BrowserRouter>, 
+    </AppContainer>, 
   document.getElementById("root"));
 }
 
