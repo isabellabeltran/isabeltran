@@ -1,6 +1,5 @@
 .container {
   &__navLinks {
-    // background-color: aqua;
     text-align: center;
     &--eachLink {
       display: inline-block;
@@ -19,20 +18,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-
+  }
+  &__welcome {
+    font-family: $font; 
+    font-size: 5rem;
+    font-weight: 100;
+    color: $white; 
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    position: absolute;
+    top: 2rem;;
+    left: 35%;
   }
   &__greeting {
     background-color: $black;
     position: absolute;
-    // left: 22%;
     top: 64.4%; 
     font-family: $font;
-    // width: 70rem;
     width: 100%;
     height: 25rem;
     font-weight: 500;
     font-size: 3rem;
-    opacity: 0.9;
+    opacity: 0.8;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 
     &--box {
@@ -50,7 +57,7 @@
     }
     &--link {
       display: inline-block;
-      border: solid #33C5EC thin;
+      border: solid $blue thin;
       border-radius: .4rem;
       padding: 1.5rem 2rem;
       font-size: 1.5rem;
@@ -61,9 +68,10 @@
       letter-spacing: .5rem;
       margin-top: 6rem;
       cursor: pointer;
+      margin-left: 14rem;
+
       &:not(:last-child) {
-        margin-right: 20rem;
-        margin-left: 30rem;
+        // margin-right: 8rem;
       }
       &:hover {
         border: none;

@@ -2,68 +2,95 @@
   background-color: $black; 
   opacity: .9;
   padding-bottom: 5rem;
-  // height: 100vh;
 
   &__container {
     max-width: 110rem;
     min-width: 350px;
     margin: 0 auto;
+
     text-align: center; 
+    margin-top: 3rem;
     // background-color: aqua;
     
     &--left {
+      width: 40%;
+      display: inline-block;
+    }
+    &--right {
+      vertical-align: top;
       width: 60%;
       display: inline-block;
-      margin-right: 2.2rem;
     }
 
     &--imageContentRow {
       width: 100%;
-      // margin-top: 1rem;
+      margin-top: 1rem;
       margin-bottom: 1rem;
     }
 
     &--image1 {
-      width: 48%; 
-      background-image: url(../images/portrait.jpg); 
+      width: 80%; 
+      background-image: url(../images/isabella.jpg); 
+      transform: rotate(90deg);
       height: 30rem;
-      background-position: bottom;
       background-size: cover; 
-      display: inline-block; 
-      padding: 1rem;
-    }
-    &--image2 {
-      width: 48%; 
-      background-image: url(../images/quoteExample.jpg); 
-      height: 30rem;
-      background-position: bottom;
-      background-size: cover; 
-      display: inline-block; 
-      padding: 1rem;
-    }
-    &--image3 {
-      width: 48%; 
-      background-image: url(../images/mickeyExample.jpg);  
-      height: 30rem;
-      background-position: bottom;
-      background-size: cover; 
-      display: inline-block; 
-      padding: 1rem;
+      margin-top: 10rem;
+      -webkit-filter: brightness(1.1);
+      filter: brightness(1.1);
+
     }
     &--content {
-      width: 48%; 
-      height: 30rem;
-      border: solid white thin; 
+      width: 100%;
       display: inline-block; 
       vertical-align: top;
-      padding: .5rem;
-      // margin-left: 1rem;
-      // margin-right: 1rem;
       font-family: $font; 
-      font-size: 1.5rem;
-      color: grey;
-      letter-spacing: .2rem;
+      color: $light-grey;
+      margin-left: 1rem;
+      margin-top: -1rem;
+      font-weight: 100;
+    }
+    &--sentence1 {
+      border: .1rem solid $blue; 
+      display: block;
       padding: 1rem;
+      width: 30rem;
+      font-size: 1.5rem;
+      letter-spacing: .1rem;
+    }
+    &--sentence2 {
+      border: .1rem solid $blue; 
+      display: block;
+      padding: 1rem;
+      width: 40rem;
+      margin-left: 20rem;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      z-index: 100;
+      letter-spacing: .1rem;
+    }
+    &--sentence3 {
+      border: .1rem solid $blue; 
+      display: block;
+      padding: 1rem;
+      width: 40rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-left: 4rem;
+      letter-spacing: .1rem;
+    }
+    &--sentence4 {
+      border: .1rem solid $blue; 
+      display: block;
+      z-index: 200;
+      margin-left: 25rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      width: 35rem;
+      font-size: 1.5rem;
+      letter-spacing: .1rem;
+      a {
+        color: $blue; 
+      }
     }
   }
 }

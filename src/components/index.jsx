@@ -33,7 +33,7 @@ export default class extends Component {
     this.state = {}
   }
 
-  render() {
+  render() { 
     return (
       <div className="container">
         <div className="container__image">
@@ -42,14 +42,11 @@ export default class extends Component {
               <div className="container__greeting--title">Do you want to...</div>
               <div className="container__greeting--link"><a href="#about">See who I am?</a></div>
               <div className="container__greeting--link"><a href="#portfolio">See my work</a></div>
+              <div className="container__greeting--link"><a href="#contact">Get in touch</a></div>
             </div>
           </div>
         </div>
-        <section className="section-inBetween">
-        <div className="section-inBetween__container">
-        
-        </div>
-      </section>
+
       <section id="about">
       <div className="section-about">
         <div className="heading-primary">
@@ -62,18 +59,21 @@ export default class extends Component {
             <div className="section-about__container--imageContentRow">
               <div className="section-about__container--image1">
               </div>
-              <div className="section-about__container--content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-                fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-              </div>
             </div>
+        </div>
 
+        <div className="section-about__container--right">    
             <div className="section-about__container--imageContentRow">
               <div className="section-about__container--content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
-                fugiat officia modi, odit minus. Ipsam est dignissimos quem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus hic, accusamus blanditiis nulla voluptatibus dolore eius et eaque dignissimos 
+              <div className="section-about__container--sentence1">Hi! I am Isabella. I love building web applications, learning new technologies and meeting new people.</div>
+              <div className="section-about__container--sentence2">I am originally from Guatemala but life brought me to the United States five years ago with my family. I believe this experience has teach me that there is nothing more valuable than education. 
+                My life purpose is to never stop learning and share my knowledge with anyone that needs it. 
               </div>
-              <div className="section-about__container--image2"> 
+              <div className="section-about__container--sentence3">Right now, I'm part of an organization in Africa that teaches computer science fundamentals to orphans in the slums of Nairobi, Kenya. 
+                These kids living and education expenses depend entirely on donations. I designed and built a website that facilitates this process for current and new donors. When I am not coding my favorite activity is to skype with these kids and try to answer any question that comes to their mind.
+              </div>
+              <div className="section-about__container--sentence4">If you have a project that you want to get started or if you think you need my help with something then don't be a stranger and <a href="#contact">get in touch!</a></div>
+              {/* <div className="section-about__container--sentence">Some things that I'm currently into: -My new dog Barry -Dancing Bachata -User experience</div> */}
               </div>
             </div>
           </div>
@@ -81,11 +81,20 @@ export default class extends Component {
         </div>
       </section> 
 
-      {/* <section className="section-inBetween">
-        <div className="section-inBetween__container">
-        
+      <section className="section-barry ">
+        <div className="section-barry__container">
+        <div className="section-barry__container--title">Meet Barry</div>
+        <div className="section-barry__container--contentContainer">
+          <div className="section-barry__container--content">
+            My ten month Dorgi that shares my passion of learning. 
+            In less than a week Barry has learn how to sit, wait and walk on a leash. 
+            His next goal is to be able to shake hands. 
+            When he is not learning new tricks, Barry likes to spend his time meeting new furry and human friends. 
+          </div>
         </div>
-      </section> */}
+        <div className="section-barry__container--picture"></div>
+        </div>
+      </section>
 
         {/* PROJECTS */}
 
@@ -223,7 +232,7 @@ export default class extends Component {
                 <div className="card__backCardContainer--codeContainer">
                   <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
                   <div className="card__backCardContainer--codeLinks">
-                  <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
+                  <a href="https://github.com/LegacyDreamTeam" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
                   </div>
                 </div>
             </div>
@@ -278,20 +287,39 @@ export default class extends Component {
       </div>
         </section>
 
-        {/* <section className="section-contactMe">
+      {/* <section className="section-inBetween">
+        <div className="section-inBetween__container">
+        
+        </div>
+      </section> */}
+
+        <section id="contact">
+        <div  className="section-contactMe">
           <div className="section-contactMe__footerContainer">
-            <div className="section-contactMe__footerContainer--title">Contact me</div>
+            <div className="section-contactMe__footerContainer--title">Let's get in touch</div>
             <div className="section-contactMe__footerContainer--links">
-              <a href="https://www.linkedin.com/in/isa-beltran/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="white" /></a>
+              <a href="https://www.linkedin.com/in/isa-beltran/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="4x" color="black" /></a>
+              <div className="section-contactMe__footerContainer--linksName">LinkedIn</div>
             </div>
             <div className="section-contactMe__footerContainer--links">
-              <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="3x" color="white" /></a>
+              <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
+              <div className="section-contactMe__footerContainer--linksName">Github</div>
             </div>
             <div className="section-contactMe__footerContainer--links">
-            <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="3x" color="white" /></a>
+              <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="4x" color="black" /></a>
+              <div className="section-contactMe__footerContainer--linksName">Email</div>
             </div>
+            {/* <div className="section-contactMe__footerContainer--links">
+              <a target="_blank"><FontAwesomeIcon icon="file-alt" size="4x" color="black" />
+              </a>
+              <div className="section-contactMe__footerContainer--linksName">View my Resume</div>
+            </div> */}
           </div>
-        </section>  */}
+          <div className="websiteSources">
+            {/* <div className="websiteSources__content">This website</div> */}
+          </div>
+          </div>
+        </section> 
       </div>
     )
   }

@@ -1,22 +1,33 @@
 .section-contactMe {
-  // background:rgba(0, 0, 0, 0.9);
-  // border: solid blue thin;
-  background-color: $black;
-  padding: 1.5rem 0;
-  text-align: center; 
+  background-color: $white;
+  height: 30vh;
+  opacity: .9;
 
   &__footerContainer {
+    text-align: center; 
     &--title {
-      color: $white; 
-      font-size: 2rem;
-      text-transform: uppercase; 
-      letter-spacing: 1rem;
-      margin-bottom: 2rem;
+      text-align: center;
+      color: $black; 
+      letter-spacing: 1.2rem;
+      text-transform: uppercase;
       font-family: $font;
+      font-size: 3rem;
+      font-weight: 100;
+      padding: 3rem 0;
     }
     &--links {
       display: inline-block;
-      margin: 0 2rem;
+      margin-top: 2rem;
+      margin-right: 5rem;
+      color: $black;
+      text-align: center;
+    }
+    &--linksName {
+      font-family: $font; 
+      letter-spacing: .1rem;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
     }
   }
 }
