@@ -2,11 +2,11 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 43rem;
-  width: 23%;
+  width: 42%;
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-top: 3.5rem;
-
+  // background-color: yellowgreen;
   
   &__side {
     height: 43rem;
@@ -70,7 +70,7 @@
 
   &__frontTitle {
     text-transform: uppercase; 
-    letter-spacing: 1.2rem;
+    letter-spacing: 1rem;
     font-family: $font; 
     color: $white;
     margin-top: 2rem;
@@ -80,7 +80,7 @@
   }
 
   &__frontInformation {
-    border: solid #33C5EC thin;
+    border: solid $blue thin;
     width: 90%;
     margin-left: 1.3rem;
     margin-top: 1.8rem;
@@ -119,7 +119,6 @@
       display: inline-block;
       margin-top: 2rem;
       margin-bottom: 2rem;
-      margin-left: 2.3rem; 
       padding-left: 1rem;
     }
 

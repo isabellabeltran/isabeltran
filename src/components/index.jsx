@@ -38,50 +38,48 @@ export default class extends Component {
       <div className="container">
         <div className="container__image">
           <div className="container__greeting">
-            <div className="container__greeting--box">
-              <div className="container__greeting--title">Do you want to...</div>
-              <div className="container__greeting--link"><a href="#about">See who I am?</a></div>
-              <div className="container__greeting--link"><a href="#portfolio">See my work</a></div>
-              <div className="container__greeting--link"><a href="#contact">Get in touch</a></div>
-            </div>
+          <div className="container__greeting--title">Welcome</div>
+            <div className="container__greeting--title">Do you want to...</div>
+              <div className="container__greeting--box">
+                <div className="container__greeting--box-1"><a href="#about">See who I am?</a></div>
+                <div className="container__greeting--box-2"><a href="#portfolio">See my work</a></div>
+                <div className="container__greeting--box-3"><a href="#contact">Get in touch</a></div>
+              </div>
           </div>
         </div>
 
       <section id="about">
       <div className="section-about">
         <div className="heading-primary">
-          A little bit about myself
+          Hi, I'm Isabella Beltran
         </div>
 
-        <div className="section-about__container">
-          <div className="section-about__container--left">
+        <div className="aboutContainer">
 
-            <div className="section-about__container--imageContentRow">
-              <div className="section-about__container--image1">
-              </div>
-            </div>
+        <div className="aboutContainer__imageContainer">
+          <div className="aboutContainer__imageContainer--image"></div>
+          <div className="aboutContainer__imageContainer--image"></div>
+          <div className="aboutContainer__imageContainer--image"></div>
         </div>
 
-        <div className="section-about__container--right">    
-            <div className="section-about__container--imageContentRow">
-              <div className="section-about__container--content">
-              <div className="section-about__container--sentence1">Hi! I am Isabella. I love building web applications, learning new technologies and meeting new people.</div>
-              <div className="section-about__container--sentence2">I am originally from Guatemala but life brought me to the United States five years ago with my family. I believe this experience has teach me that there is nothing more valuable than education. 
-                My life purpose is to never stop learning and share my knowledge with anyone that needs it. 
-              </div>
-              <div className="section-about__container--sentence3">Right now, I'm part of an organization in Africa that teaches computer science fundamentals to orphans in the slums of Nairobi, Kenya. 
-                These kids living and education expenses depend entirely on donations. I designed and built a website that facilitates this process for current and new donors. When I am not coding my favorite activity is to skype with these kids and try to answer any question that comes to their mind.
-              </div>
-              <div className="section-about__container--sentence4">If you have a project that you want to get started or if you think you need my help with something then don't be a stranger and <a href="#contact">get in touch!</a></div>
-              {/* <div className="section-about__container--sentence">Some things that I'm currently into: -My new dog Barry -Dancing Bachata -User experience</div> */}
-              </div>
-            </div>
+        <div className="aboutContainer__contentContainer">
+          <div className="aboutContainer__contentContainer--content">
+            I love building web applications, learning new technologies and meeting new people.
+            I am originally from Guatemala but life brought me to the United States five years ago with my family. I believe this experience has teach me that there is nothing more valuable than education. 
+            My life purpose is to never stop learning and share my knowledge with anyone that needs it. 
+            At present, I am developing a website for a non-profit in Africa that teaches computer science fundamentals to the non-privileged kids at an orphanage in Nairobi, Kenya. The living and education 
+            expenses of these kids solely depend on donations; therefore, by building them a website, the orphanage will be able to seek donations from various sources across the globe. 
+            This project is really close to my heart and has brought me so much joy because these kids strength are a source of inspiration to me and I am glad that I'm able to give them something back. 
+            If you need some professional guidance, want to know more about programming, boot-camps or have 
+            an opportunity where you think I would be a great fit, feel free to <a href="#contact">contact me!</a>
           </div>
+        </div>
+
         </div>
         </div>
       </section> 
 
-      <section className="section-barry ">
+      <section className="section-barry">
         <div className="section-barry__container">
         <div className="section-barry__container--title">Meet Barry</div>
         <div className="section-barry__container--contentContainer">
@@ -146,7 +144,7 @@ export default class extends Component {
                   </div>
                 </div>
             </div>
-
+      
         </div>
       </div>
 
@@ -194,10 +192,11 @@ export default class extends Component {
             </div>
           </div>
         </div>
+        </div> 
       </div>
 
           {/* CODESLING */}
-
+          <div className="projectRow">
           <div className="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">

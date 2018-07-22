@@ -1,5 +1,10 @@
 .section-projects {
   background: rgba(0, 0, 0, 0.9);
   padding-bottom: 8.5rem;
-  height: 100vh;
+  &__container {
+    max-width: 114rem;
+    min-width: 35rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

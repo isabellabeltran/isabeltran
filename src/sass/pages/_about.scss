@@ -2,95 +2,46 @@
   background-color: $black; 
   opacity: .9;
   padding-bottom: 5rem;
+}
 
-  &__container {
-    max-width: 110rem;
-    min-width: 350px;
-    margin: 0 auto;
+.aboutContainer {
+  max-width: 114rem;
+  min-width: 35rem;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 3rem;
 
-    text-align: center; 
-    margin-top: 3rem;
-    // background-color: aqua;
-    
-    &--left {
-      width: 40%;
+  &__imageContainer {
+    text-align: center;
+    margin-top: 1rem;
+
+    &--image {
       display: inline-block;
-    }
-    &--right {
-      vertical-align: top;
-      width: 60%;
-      display: inline-block;
-    }
-
-    &--imageContentRow {
-      width: 100%;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    &--image1 {
-      width: 80%; 
+      height: 20rem;
+      width: 25rem;
+      border: .1rem solid $white;
       background-image: url(../images/isabella.jpg); 
       transform: rotate(90deg);
-      height: 30rem;
       background-size: cover; 
-      margin-top: 10rem;
       -webkit-filter: brightness(1.1);
       filter: brightness(1.1);
+    }
+  }
 
-    }
+  &__contentContainer {
+    text-align: center;
+    margin-top: 6rem;
+
     &--content {
-      width: 100%;
-      display: inline-block; 
-      vertical-align: top;
-      font-family: $font; 
+      display: inline-block;
+      max-width: 75rem;
+      border: .1rem solid $blue; 
+      padding: 2rem;
       color: $light-grey;
-      margin-left: 1rem;
-      margin-top: -1rem;
+      font-size: 1.5rem;
       font-weight: 100;
-    }
-    &--sentence1 {
-      border: .1rem solid $blue; 
-      display: block;
-      padding: 1rem;
-      width: 30rem;
-      font-size: 1.5rem;
       letter-spacing: .1rem;
-    }
-    &--sentence2 {
-      border: .1rem solid $blue; 
-      display: block;
-      padding: 1rem;
-      width: 40rem;
-      margin-left: 20rem;
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      z-index: 100;
-      letter-spacing: .1rem;
-    }
-    &--sentence3 {
-      border: .1rem solid $blue; 
-      display: block;
-      padding: 1rem;
-      width: 40rem;
-      font-size: 1.5rem;
-      margin-top: 2rem;
-      margin-left: 4rem;
-      letter-spacing: .1rem;
-    }
-    &--sentence4 {
-      border: .1rem solid $blue; 
-      display: block;
-      z-index: 200;
-      margin-left: 25rem;
-      margin-top: 2rem;
-      padding: 1rem;
-      width: 35rem;
-      font-size: 1.5rem;
-      letter-spacing: .1rem;
-      a {
-        color: $blue; 
-      }
+      font-family: $font;
     }
   }
 }
