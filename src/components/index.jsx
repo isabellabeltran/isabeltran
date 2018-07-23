@@ -38,7 +38,7 @@ export default class extends Component {
       <div className="container">
         <div className="container__image">
           <div className="container__greeting">
-          <div className="container__greeting--title">Welcome</div>
+          <div className="container__greeting--title">Hello</div>
             <div className="container__greeting--title">Do you want to...</div>
               <div className="container__greeting--box">
                 <div className="container__greeting--box-1"><a href="#about">See who I am?</a></div>
@@ -58,20 +58,43 @@ export default class extends Component {
 
         <div className="aboutContainer__imageContainer">
           <div className="aboutContainer__imageContainer--image"></div>
-          <div className="aboutContainer__imageContainer--image"></div>
-          <div className="aboutContainer__imageContainer--image"></div>
+          {/* <div className="aboutContainer__imageContainer--image"></div>
+          <div className="aboutContainer__imageContainer--image"></div> */}
         </div>
 
         <div className="aboutContainer__contentContainer">
           <div className="aboutContainer__contentContainer--content">
-            I love building web applications, learning new technologies and meeting new people.
-            I am originally from Guatemala but life brought me to the United States five years ago with my family. I believe this experience has teach me that there is nothing more valuable than education. 
-            My life purpose is to never stop learning and share my knowledge with anyone that needs it. 
-            At present, I am developing a website for a non-profit in Africa that teaches computer science fundamentals to the non-privileged kids at an orphanage in Nairobi, Kenya. The living and education 
-            expenses of these kids solely depend on donations; therefore, by building them a website, the orphanage will be able to seek donations from various sources across the globe. 
-            This project is really close to my heart and has brought me so much joy because these kids strength are a source of inspiration to me and I am glad that I'm able to give them something back. 
-            If you need some professional guidance, want to know more about programming, boot-camps or have 
-            an opportunity where you think I would be a great fit, feel free to <a href="#contact">contact me!</a>
+          <div>
+          I’m a software engineer focused on full-stack development with a passion for building meaningful web applications. 
+          My interest in technology started when I was going to school for Marketing and Design in Guatemala. 
+          One of my classes was "Algorithms and Basic Programming" and to be honest before this class I didn’t even know programming existed. 
+          When the semester ended I was full of curiosity and wanted to know more but switching careers at the time seemed impossible to me. 
+          In Guatemala education is a luxury that at least 54% of the population can’t afford. 
+          I felt lucky to be there in the first place and I didn’t want to risk my current opportunity.
+          </div>
+          <br></br>
+          <div>
+            But life works in mysterious ways bringing my family and I to the United States five years ago. 
+            This experience challenged me in many different ways but it also gave me what I consider my greatest quality, resilience. 
+            This helped me support my family working 60 hour shifts in a car dealership leading the sales team most of the time with an average of twelve cars a month and $35K gross. 
+            It was during this time that I was able to learn more about programing through online courses and found more fulfillment in that than anything else that I have worked before. 
+          </div>
+          <br></br>
+          <div>
+          I wish I had the resources to go back to school but my responsibilities made me look for alternative options. 
+          After a prolonged phase of sacrifices and as a result of extensive research, I came across Hack Reactor - a software engineer Bootcamp that gave me the opportunity to meet professionals and other people who were passionate about programming like me. 
+          I got the chance to work with them, learn from them and was able to polish my professional as well as interpersonal skills. 
+          </div>
+          <br></br>
+          <div>
+          At present, I am developing a website for a non-profit in Africa that teaches computer science fundamentals to the non-privilege kids at an orphanage in the slums of Nairobi, Kenya. 
+          The living and education expenses of these kids solely depend on donations; therefore, by building them a website, the orphanage will be able to seek donation from various sources across the globe. 
+          This project is really close to my heart because I believe education should be a necessity not a luxury, which is the case for many countries. 
+          So it brings me joy knowing that by using my skills in technology low resources communities will receive the education they need. 
+          </div>
+          <br></br>
+            <div>If you need some professional guidance, want to know more about programming boot-camps or have 
+            an opportunity where you think I would be a great fit, feel free to <a href="#contact">contact me.</a> I look forward to hearing from you!</div>
           </div>
         </div>
 
@@ -84,10 +107,12 @@ export default class extends Component {
         <div className="section-barry__container--title">Meet Barry</div>
         <div className="section-barry__container--contentContainer">
           <div className="section-barry__container--content">
-            My ten month Dorgi that shares my passion of learning. 
-            In less than a week Barry has learn how to sit, wait and walk on a leash. 
-            His next goal is to be able to shake hands. 
-            When he is not learning new tricks, Barry likes to spend his time meeting new furry and human friends. 
+            <div>My ten month Dorgi that shares my passion of learning.</div> 
+            <br></br>
+            <div>In less than a week Barry has learn how to sit, wait and walk on a leash. 
+            His next goal is to be able to shake hands.</div>
+            <br></br>
+            <div>When he is not learning new tricks, Barry likes to spend his time meeting new furry and human friends.</div>
           </div>
         </div>
         <div className="section-barry__container--picture"></div>
@@ -286,12 +311,6 @@ export default class extends Component {
       </div>
         </section>
 
-      {/* <section className="section-inBetween">
-        <div className="section-inBetween__container">
-        
-        </div>
-      </section> */}
-
         <section id="contact">
         <div  className="section-contactMe">
           <div className="section-contactMe__footerContainer">
@@ -304,19 +323,14 @@ export default class extends Component {
               <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
               <div className="section-contactMe__footerContainer--linksName">Github</div>
             </div>
-            <div className="section-contactMe__footerContainer--links">
+            {/* <div className="section-contactMe__footerContainer--links">
               <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="4x" color="black" /></a>
               <div className="section-contactMe__footerContainer--linksName">Email</div>
-            </div>
-            {/* <div className="section-contactMe__footerContainer--links">
-              <a target="_blank"><FontAwesomeIcon icon="file-alt" size="4x" color="black" />
-              </a>
-              <div className="section-contactMe__footerContainer--linksName">View my Resume</div>
             </div> */}
           </div>
-          <div className="websiteSources">
-            {/* <div className="websiteSources__content">This website</div> */}
-          </div>
+          {/* <div className="websiteSources">
+            <div className="websiteSources__content">This website</div>
+          </div> */}
           </div>
         </section> 
       </div>
