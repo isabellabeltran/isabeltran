@@ -84,12 +84,23 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "videos/[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     //to add the express server 
-    // new webpack.HotModuleReplacementPlugin(), 
+    new webpack.HotModuleReplacementPlugin(), 
     new HTMLWebpackPlugin({
       template: "src/index.html"
       //^^^ Wherever the HTML LIVES 

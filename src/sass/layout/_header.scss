@@ -1,108 +1,58 @@
-.container {
-  max-width: 140rem;
-  min-width: 35rem;
+.header {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: relative;
 
-  &__image {
-    background-image: url(../images/boston.jpg);
-    height: 100vh; 
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+  &__video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+
   }
   &__greeting {
-    background-color: $black;
-    position: relative;
-    top: 25rem; 
-    font-family: $font;
+    height: 16.5rem;
     width: 100%;
-    padding: 2rem 0;
-    font-weight: 500;
-    font-size: 3rem;
-    opacity: 0.8;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    background-color: rgba($color-black, .7); 
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    padding: 1rem 0;
 
-    &--title {
-      color: $white; 
-      text-align: center;
+    &--text {
+      color: $white;
+      font-size: 3rem;
       text-transform: uppercase;
-      font-family: $font;
-      letter-spacing: .5rem;
+      letter-spacing: .2rem;
+      padding-top: .5rem;
     }
-
-    &--box {
-      text-align: center;
-      margin-top: 1.5rem;
-      &-1 {
-        display: inline-block;
-        border: solid $blue thin;
-        border-radius: .4rem;
-        padding: 1.5rem 1.5rem;
-        font-size: 1.5rem;
-        color: $white; 
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $font;
-        letter-spacing: .5rem;
-        cursor: pointer;
-        
-        &:hover {
-          border: none;
-          background-color: $blue;
-        }
-        a {
-          text-decoration: none;
-          color: $white;
-        }
+    &--nav {
+      padding-top: 1.5rem;
+    }   
+    &--nav a{
+      transition: transform .4s;
+      display: inline-block;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      padding: 1rem;
+      color: $white;
+      border: solid $blue thin;
+      cursor: pointer;
+      
+      &:not(:last-child) {
+        margin-right: 2rem;
       }
-
-      &-2 {
-        display: inline-block;
-        border: solid $blue thin;
-        border-radius: .4rem;
-        padding: 1.5rem 2rem;
-        font-size: 1.5rem;
-        color: $white; 
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $font;
-        letter-spacing: .5rem;
-        cursor: pointer;
-
-        &:hover {
-          border: none;
-          background-color: $blue;
-        }
-        a {
-          text-decoration: none;
-          color: $white;
-        }
-      }
-
-      &-3 {
-        display: inline-block;
-        border: solid $blue thin;
-        border-radius: .4rem;
-        padding: 1.5rem 2rem;
-        font-size: 1.5rem;
-        color: $white; 
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $font;
-        letter-spacing: .5rem;
-        cursor: pointer;
-        left: 4rem;
-
-        &:hover {
-          border: none;
-          background-color: $blue;
-        }
-        a {
-          text-decoration: none;
-          color: $white;
-        }
+      &:hover {
+        background-color: $white; 
+        color: $black;
+        transform: translateY(-1.5rem) scale(1.03);
       }
     }
   }
 }
+
+

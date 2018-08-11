@@ -26,7 +26,7 @@ server.use(staticMiddleware);
 
 // server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
 
-const PORT = process.env.PORT || 2000;
+const PORT = process.env.PORT || 7000;
 
 server.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`); 
