@@ -1,4 +1,4 @@
-.sectionHeader {
+.sectionHeaderDark {
   padding: 4rem 0;
   color: $white; 
   text-transform: uppercase;
@@ -14,3 +14,18 @@
   }
 }
 
+.sectionHeaderLight {
+  padding: 4rem 0;
+  color: $black; 
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+
+  &__primary {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  &__secondary {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+}

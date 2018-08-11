@@ -33,3 +33,18 @@
     border: solid $blue thin;
   }
 }
+
+.section-barry {
+  padding-bottom: 20rem;
+  text-align: center;
+  background-color: $light-grey;
+}
+.section-barry p {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+  &:not(:last-child) {
+    margin-top: 5rem;
+  }
+}
+

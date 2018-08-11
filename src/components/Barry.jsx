@@ -1,4 +1,7 @@
 import React, { Component } from 'react'; 
+import barry3 from '../images/barryalone.jpg';
+import barry1 from '../images/barryandranger.jpg';
+import barry2 from '../images/jennyandbarry.jpg';
 
 export default class Barry extends Component {
   constructor(props) {
@@ -6,16 +9,23 @@ export default class Barry extends Component {
   }
   render() {
     return (
-    <div className="section-barry__container">
-    <div className="section-barry__container--title">Meet Barry</div>
-    <div className="section-barry__container--contentContainer">
-      <div className="section-barry__container--content">
-        <div>My ten month old rescue Dorgi (Corgi X Dachshund) that shares my passion for life.</div> 
-        <br></br>
-        <div>When he is not learning new tricks, Barry likes to spend his time meeting new furry and human friends.</div>
+    <div className="section-barry">
+      <div className="sectionHeaderLight">
+        <div className="sectionHeaderLight__primary">Meet Barry</div>
       </div>
-    </div>
-    <div className="section-barry__container--picture"></div>
+      <div className="row">
+        <div className="col-1-of-2">
+          <p>My ten month old rescue Dorgi (Corgi X Dachshund) that shares my passion for life.</p>
+          <p>When he is not learning new tricks, Barry likes to spend his time meeting new furry and human friends.</p>
+        </div>
+        <div className="col-1-of-2">
+          <div className="composition">
+            <img className="composition__photo composition__photo--p1" src={barry1}/>
+            <img className="composition__photo composition__photo--p2" src={barry2}/>
+            <img className="composition__photo composition__photo--p3" src={barry3}/>
+          </div>
+        </div>
+      </div>
     </div>
     )
   }
