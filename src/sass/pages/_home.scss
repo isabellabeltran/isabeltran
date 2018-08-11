@@ -1,3 +1,35 @@
-.section-greeting {
-  
+.section-about {
+  background-color: rgba($black, .9);
+  text-align: center;
+  padding-bottom: 4rem;
+
+  &__picture {
+    position: relative;
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+  }
+
+  &__picture img{
+    height: 30rem;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 1rem;
+
+    &:hover {
+      outline: .2rem solid $blue;
+      transform: scale(1.05) translateY(-.5rem);
+      z-index: 20;
+    }
+  }
+
+  &__story {
+    max-width: 95rem;
+    margin: 0 auto;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    border: solid $blue thin;
+  }
 }

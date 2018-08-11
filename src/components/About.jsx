@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import Isabella from '../images/isabellasPicture.jpg';
 
 export default class About extends Component {
   constructor(props) {
@@ -6,20 +7,15 @@ export default class About extends Component {
   }
   render() {
     return(
-      <div>
-        <div className="section-about">
-        <div className="heading-primary">
-          Hi, I'm Isabella Beltran sales consultant turn software engineer
+      <div className="section-about">
+        <div className="sectionHeader">
+          <div className="sectionHeader__primary">Hi, I'm Isabella Beltran</div>
+          <div className="sectionHeader__secondary">sales consultant turn software engineer</div>
         </div>
-
-        <div className="aboutContainer">
-
-        <div className="aboutContainer__imageContainer">
-          <div className="aboutContainer__imageContainer--image"></div>
+        <div className="section-about__picture">
+          <img src={Isabella} />
         </div>
-
-        <div className="aboutContainer__contentContainer">
-          <div className="aboutContainer__contentContainer--content">
+        <div className="section-about__story">
           <div>
           I’m a software engineer focused on full-stack development with a passion for building meaningful web applications. 
           My interest in technology started when I was going to school for Marketing and Design in Guatemala. 
@@ -52,10 +48,6 @@ export default class About extends Component {
             <div>If you need some professional guidance, want to know more about programming boot-camps or have 
             an opportunity where you think I would be a great fit, feel free to <a href="#contact">contact me.</a> I look forward to hearing from you!</div>
           </div>
-        </div>
-
-        </div>
-        </div>
       </div>
     )
   }

@@ -44,11 +44,11 @@ export default class extends Component {
           <Greeting /> 
         </header>
         <main>
-          <section className="section-about">
+          <section>
             <About /> 
           </section>
-          <section className="section-barry"></section>
-          <section className="section-projects"></section>
+          {/* <section className="section-barry"></section>
+          <section className="section-projects"></section> */}
         </main>
         <footer></footer>
       </div>
