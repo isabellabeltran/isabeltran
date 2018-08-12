@@ -1,0 +1,21 @@
+.contact a{
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.siteInfo {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 6rem;
+  color: $white;
+  letter-spacing: .2rem;
+  &__primary a{
+    color: $blue; 
+    text-decoration: none;
+  }
+  &__secondary {
+    display: inline;
+    color: $blue;
+  }
+}
