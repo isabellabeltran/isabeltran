@@ -20,17 +20,17 @@ export default class extends Component {
           <Greeting /> 
         </header>
         <main>
-          <section>
+          <section id="about">
             <About /> 
           </section>
           <section>
             <Barry />
           </section>
-          <section>
+          <section id="projects">
             <Projects />
           </section>
         </main>
-        <footer>
+        <footer id="contact">
           <Contact />
         </footer>
       </div>

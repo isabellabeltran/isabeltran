@@ -16,9 +16,9 @@ export default class Greeting extends Component {
               <div className="header__greeting--text">Hello</div>
               <div className="header__greeting--text">Do you want to...</div>
               <div className="header__greeting--nav">
-                <a>learn about me</a>
-                <a>see my work</a>
-                <a>get in touch</a>
+                <a href="#about">learn about me</a>
+                <a href="#projects">see my work</a>
+                <a href="#contact">get in touch</a>
               </div>
           </div>
         </div>

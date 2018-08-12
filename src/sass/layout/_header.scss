@@ -42,6 +42,7 @@
       color: $white;
       border: solid $blue thin;
       cursor: pointer;
+      text-decoration: none;
       
       &:not(:last-child) {
         margin-right: 2rem;
