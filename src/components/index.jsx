@@ -4,6 +4,7 @@ import Greeting from './Greeting.jsx';
 import About from './About.jsx';
 import Barry from './Barry.jsx';
 import Projects from './Projects.jsx';
+import Contact from './Contact.jsx';
 
 
 export default class extends Component {
@@ -25,11 +26,13 @@ export default class extends Component {
           <section>
             <Barry />
           </section>
-          <section className="section-projects">
+          <section>
             <Projects />
           </section>
         </main>
-        <footer></footer>
+        <footer>
+          <Contact />
+        </footer>
       </div>
     )
   }
@@ -69,206 +72,6 @@ export default class extends Component {
 /**
  * 
  * 
-      <section id="about">
-      <About /> 
-      </section> 
-
-      <section className="section-barry">
-        <Barry /> 
-      </section>
-
-      PROJECTS 
-
-        // <section id="portfolio">
-        // <div className="section-projects">
-        // <div className="section-projects__container">
-        // <div className="section-projects__image">
-        //   <div className="heading-primary">
-        //     A sample of my work 
-        //   </div>
-  
-        // <div className="projectRow">
-        //   <div className="card">
-        //     <div className="card__side card__side--front">
-        //       <div className="card__picture card__picture--1">
-        //         &nbsp;
-        //       </div>
-        //       <div className="card__frontInformation">
-        //         <div className="card__frontTitle">
-        //           Jijenge
-        //         </div>
-        //         <div className="card__appDescription">
-        //           A website created for an organization that teaches computer science fundamentals to orphans in the slums of Nairobi Kenya
-        //         </div>
-        //       </div>
-        //     </div>
-  
-        //     <div className="card__side card__side--back">
-  
-        //       <div className="card__backCardContainer">
-        //           <div className="card__backCardContainer--techStack">
-        //             <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
-        //             <div className="card__backCardContainer--techStackLinks">
-        //               <img className="card__backCardContainer--img" src={reactImage} /> 
-        //               <img className="card__backCardContainer--img" src={Sass} /> 
-        //               <img className="card__backCardContainer--imgStripe" src={Stripe} /> 
-        //             </div>
-        //             <div className="card__backCardContainer--techStackLinks">
-        //               <img className="card__backCardContainer--img" src={nodeJS} /> 
-        //               <img className="card__backCardContainer--img" src={expressJS} /> 
-        //               <img className="card__backCardContainer--imgPost" src={postSQL} /> 
-        //             </div>
-        //           </div>
-  
-        //           <div className="card__backCardContainer--codeContainer">
-        //             <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
-        //             <div className="card__backCardContainer--codeLinks">
-        //             <a href="https://github.com/Jijenge" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
-        //             </div>
-        //           </div>
-        //       </div>
-        
-        //   </div>
-        // </div>
-  
-      
-  
-          /* <div className="card">
-            <div className="card__side card__side--front">
-              <div className="card__frontInformation">
-                <div className="card__frontTitle">
-                  Foodie
-                </div>
-                <div className="card__appDescription">
-                  A web app for food lovers to save money by ordering meals with people around them 
-                </div>
-              </div>
-              <div className="card__picture card__picture--2">
-                &nbsp;
-              </div>
-            </div>
-  
-            <div className="card__side card__side--back">
-              <div className="card__backCardContainer">
-                <div className="card__backCardContainer--techStack">
-                <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
-                <div className="card__backCardContainer--techStackLinks">
-                  <img className="card__backCardContainer--img" src={reactImage} /> 
-                  <img className="card__backCardContainer--img" src={Sass} /> 
-                  <img className="card__backCardContainer--img" src={Redux} /> 
-                </div>
-                <div className="card__backCardContainer--techStackLinks">
-                  <img className="card__backCardContainer--img" src={nodeJS} /> 
-                  <img className="card__backCardContainer--img" src={expressJS} /> 
-                  <img className="card__backCardContainer--imgPost" src={postSQL} /> 
-                </div>
-                <div className="card__backCardContainer--techStackLinks">
-                <img className="card__backCardContainer--img" src={redis} /> 
-                <img className="card__backCardContainer--img" src={mongo} /> 
-                </div>
-              </div>
-              <div className="card__backCardContainer--codeContainer">
-                <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
-                <div className="card__backCardContainer--codeLinks">
-                  <a href="https://github.com/mdhiFoodie" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div> 
-        </div> */
-  
-  
-            /* <div className="projectRow">
-            <div className="card">
-                <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--3">
-                    &nbsp;
-                  </div>
-                  <div className="card__frontInformation">
-                  <div className="card__frontTitle">
-                  Codesling
-                </div>
-                <div className="card__appDescription">
-                  A game where friends race each other to complete the given algorithm 
-                </div>
-                </div>
-                </div>
-                
-                <div className="card__side card__side--back">
-                <div className="card__backCardContainer">
-                  <div className="card__backCardContainer--techStack">
-                    <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
-                    <div className="card__backCardContainer--techStackLinks">
-                      <img className="card__backCardContainer--img" src={reactImage} /> 
-                      <img className="card__backCardContainer--imgCss" src={css} /> 
-                      <img className="card__backCardContainer--imgSocket" src={socket} /> 
-                    </div>
-                    <div className="card__backCardContainer--techStackLinks">
-                      <img className="card__backCardContainer--img" src={nodeJS} /> 
-                      <img className="card__backCardContainer--img" src={expressJS} /> 
-                      <img className="card__backCardContainer--imgPost" src={postSQL} /> 
-                    </div>
-                  </div>
-  
-                  <div className="card__backCardContainer--codeContainer">
-                    <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
-                    <div className="card__backCardContainer--codeLinks">
-                    <a href="https://github.com/LegacyDreamTeam" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
-                    </div>
-                  </div>
-              </div>
-                </div>
-              </div>
-   */
-              /* PETBOOK */
-  
-            /* <div className="card">
-                <div className="card__side card__side--front">
-                  <div className="card__frontInformation">
-                    <div className="card__frontTitle">
-                      Petbook
-                    </div>
-                    <div className="card__appDescription">
-                      A Facebook clone that mimics its basic functionality (but for furry users only).
-                    </div>
-                  </div>
-                  <div className="card__picture card__picture--4">
-                    &nbsp;
-                  </div>
-                </div>
-  
-                <div className="card__side card__side--back">
-                
-                <div className="card__backCardContainer">
-                  <div className="card__backCardContainer--techStack">
-                    <div className="card__backCardContainer--techStackTitle">Tech Stack</div>
-                    <div className="card__backCardContainer--techStackLinks">
-                      <img className="card__backCardContainer--img" src={reactImage} /> 
-                      <img className="card__backCardContainer--imgCss" src={css} /> 
-                    </div>
-                    <div className="card__backCardContainer--techStackLinks">
-                      <img className="card__backCardContainer--img" src={nodeJS} /> 
-                      <img className="card__backCardContainer--img" src={expressJS} /> 
-                      <img className="card__backCardContainer--imgPost" src={mysql} /> 
-                    </div>
-                  </div>
-  
-                  <div className="card__backCardContainer--codeContainer">
-                    <div className="card__backCardContainer--codeContainerTitle">Check out the code</div>
-                    <div className="card__backCardContainer--codeLinks">
-                    <a href="https://github.com/isabellabeltran/fbClone" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="black" /></a>
-                    </div>
-                  </div>
-              </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-          </section>
-  
           <section id="contact">
           <div  className="section-contactMe">
             <div className="section-contactMe__footerContainer">

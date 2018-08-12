@@ -5,9 +5,9 @@ import Application from './components/index.jsx';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faSearch, faPaw, faGithub, faVideo, faLinkedin, faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faSearch, faPaw, faGithub, faVideo, faLinkedin, faEnvelope, faFileAlt, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faCheckSquare, faSearch, faPaw, faVideo, faEnvelope, faFileAlt);
+library.add(fab, faCheckSquare, faSearch, faPaw, faVideo, faEnvelope, faFileAlt, faExternalLinkAlt);
 
 function render(Component) {
   ReactDOM.render(

@@ -8,9 +8,9 @@ export default class About extends Component {
   render() {
     return(
       <div className="section-about">
-        <div className="sectionHeaderDark">
-          <div className="sectionHeaderDark__primary">Hi, I'm Isabella Beltran</div>
-          <div className="sectionHeaderDark__secondary">sales consultant turn software engineer</div>
+        <div className="sectionHeaderLight">
+          <div className="sectionHeaderLight__primary">Hi, I'm Isabella Beltran</div>
+          <div className="sectionHeaderLight__secondary">sales consultant turn software engineer</div>
         </div>
         <div className="section-about__picture">
           <img src={Isabella} />

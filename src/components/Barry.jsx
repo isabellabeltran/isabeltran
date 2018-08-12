@@ -10,8 +10,8 @@ export default class Barry extends Component {
   render() {
     return (
     <div className="section-barry">
-      <div className="sectionHeaderLight">
-        <div className="sectionHeaderLight__primary">Meet Barry</div>
+      <div className="sectionHeaderDark">
+        <div className="sectionHeaderDark__primary">Meet Barry</div>
       </div>
       <div className="row">
         <div className="col-1-of-2">
