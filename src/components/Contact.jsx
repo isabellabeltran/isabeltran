@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Email from './ObfuscatedEmail.jsx';
 
 export default class Contact extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ export default class Contact extends Component {
         </div>
         <div className="contact">
           <a href="https://www.linkedin.com/in/isa-beltran/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size="4x" color="white" /></a>
-          <a href="#" target="_blank"><FontAwesomeIcon icon="envelope" size="4x" color="white" /></a>
+          <Email />
           <a href="https://github.com/isabellabeltran" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} size="4x" color="white" /></a>
         </div>
         <div className="siteInfo">

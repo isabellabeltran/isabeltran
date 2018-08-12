@@ -1,6 +1,23 @@
-.contact a{
+.contact a {
+  display: inline-block;
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+}
+
+.email {
+  position: relative;
+  display: inline-block;
+
+  &__icon {
+  }
+  &__address {
+    font-size: 5;
+    position: absolute;
+    left: -20%;
+    top: 40%;
+    opacity: 0.1;
+    color: $white
   }
 }
 
