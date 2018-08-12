@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const MinifyPlugin = require("babel-minify-webpack-plugin");
@@ -12,7 +12,7 @@ const BrotliPlugin = require("brotli-webpack-plugin");
 module.exports = env => {
   return {
     entry: {
-      main: ["./src/index.js"]
+      main: ["./src/main.js"]
     },
     mode: "production", 
     output: {
