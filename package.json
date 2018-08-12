@@ -4,8 +4,9 @@
   "description": "Creating a personal website to share my projects and some information.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config=config/webpack.dev.js",
-    "dev": "nodemon --watch config --watch src/server src/server/main.js",
+    "build": "BABEL_ENV=production webpack --config=config/webpack.prod.js --env.NODE_ENV=production",
+    "build:dev": "webpack --config=config/webpack.dev.js",
+    "dev": "nodemon --inspect --watch src/server --watch config src/server/main.js",
     "prod": "NODE_ENV=production node src/server/main.js"
   },
   "repository": {
@@ -52,13 +53,19 @@
     "webpack-hot-middleware": "^2.22.2"
   },
   "dependencies": {
+    "babel-minify-webpack-plugin": "^0.3.1",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
+    "brotli-webpack-plugin": "^1.0.0",
+    "compression-webpack-plugin": "^1.1.11",
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
     "helmet": "^3.13.0",
+    "mini-css-extract-plugin": "^0.4.1",
     "nodemon": "^1.17.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "uglifyjs-webpack-plugin": "^1.2.7"
   }
 }
