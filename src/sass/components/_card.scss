@@ -4,6 +4,14 @@
   position: relative;
   height: 48rem;
   
+  @include respond(tab-port) {
+    height: auto;
+  }
+  @include respond(phone) {
+    height: auto;
+  }
+
+  
   &__side {
     height: 48rem;
     transition: all .8s ease;
@@ -15,17 +23,43 @@
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    
+    @include respond(tab-port) {
+      position: relative;
+      height: auto;
+    }
+    @include respond(phone) {
+      position: relative;
+      height: auto;
+    }
+
     &--front {
       background-color: $light-grey;
+      @include respond(tab-port) {
+        padding-bottom: 4rem;
+      }
+      @include respond(phone) {
+        padding-bottom: 4rem;
+      }
     }
     &--back {
       background-color: $light-grey;
       transform: rotateY(180deg);
+      @include respond(tab-port) {
+        transform: rotateY(0);
+      }
+      @include respond(phone) {
+        transform: rotateY(0);
+      }
     }
   }
   &:hover &__side--front {
       transform: rotateY(-180deg);
+      @include respond(tab-port) {
+        transform: rotateY(0);
+      }
+      @include respond(phone) {
+        transform: rotateY(0);
+      }
   }
 
   &:hover &__side--back {
@@ -40,6 +74,12 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     filter: grayscale(90%);
+    @include respond(tab-port) {
+      height: 30rem;
+    }
+    @include respond(phone) {
+      height: 20rem;
+    }
     
     &--1 {
         background-image: url(../images/jijengeacademy.png);
@@ -63,6 +103,12 @@
     padding: 2rem 0;
     margin: 0 auto;
     width: 75%;
+    @include respond(tab-port) {
+      padding: 1rem 0;
+    }
+    @include respond(phone) {
+      padding: 1rem 0;
+    }
   }
   &__details {
     font-size: 1.7rem;
@@ -70,9 +116,21 @@
     padding: 0 2rem;
     width: 75%;
     margin: 0 auto;
+    @include respond(tab-port) {
+      padding-top: 1rem;
+    }
+    @include respond(phone) {
+      padding-top: 1rem;
+    }
   }
   &__tech {
     height: 50%;
+    @include respond(tab-port) {
+      height: 30%;
+    }
+    @include respond(phone) {
+      height: 25%;
+    }
 
     &--links {
       margin-top: 2rem;
@@ -84,6 +142,9 @@
         height: 5rem !important;
         width: 8rem !important;
       }
+      @include respond(phone) {
+        margin-top: 1rem;
+      }
     }
     &--links img{
       height: 5rem;
@@ -92,14 +153,28 @@
       &:not(:last-child) {
         margin-right: 2rem;
       }
+      @include respond(tab-port) {
+        height: 4rem;
+        width: 5rem;
+      }
+      @include respond(phone) {
+        height: 3rem;
+        width: 4rem;
+      }
     }
   }
   &__code {
     margin-top: 2rem;
     display: inline-block;
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
     
     &:not(:last-child) {
       margin-right: 3rem;
+      @include respond(phone) {
+        margin-right: 1rem;
+      }
     }
     &--tag {
       margin-top: 1rem;
