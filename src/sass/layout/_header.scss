@@ -23,7 +23,7 @@
     padding: 1rem 0;
 
     @include respond(phone) {
-      height: 14rem;
+      height: 18rem;
     }
 
     &--text {
@@ -50,18 +50,27 @@
 
       @include respond(phone) {
         padding: .7rem;
+        display: block;
+        width: 15rem;
+        margin: 0 auto;
+        background-color: $white; 
+        color: $black; 
       }
       
       &:not(:last-child) {
         margin-right: 2rem;
         @include respond(phone) {
-          margin-right: .3rem;
+          margin: 0 auto;
+          margin-bottom: .5rem;
         }
       }
       &:hover {
         background-color: $white; 
         color: $black;
         transform: translateY(-1.5rem) scale(1.03);
+        @include respond(phone) {
+          transform: translateY(0) scale(0);
+        }
       }
     }
   }
