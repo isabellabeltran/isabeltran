@@ -3,6 +3,7 @@
   text-align: center;
   padding-bottom: 4rem;
 
+
   &__picture {
     position: relative;
     -webkit-filter: brightness(1.1);
@@ -15,7 +16,10 @@
     transition: all .2s;
     outline-offset: 1rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-
+    @include respond(phone) {
+      height: 20rem;
+      margin-top: 2rem;
+    }
     &:hover {
       outline: .2rem solid $blue;
       transform: scale(1.05) translateY(-.5rem);
@@ -33,6 +37,10 @@
     margin-top: 5rem;
     padding: 2rem 2rem;
     border: solid $blue thin;
+    @include respond(phone) {
+      max-width: 90%;
+      margin-top: 2rem;
+    }
   }
   &__story a {
     color: $blue;
@@ -44,6 +52,12 @@
   padding-bottom: 20rem;
   text-align: center;
   background-color: rgba($black, .9);
+  @include respond(tab-port) {
+    padding-bottom: 35rem;
+  }
+  @include respond(phone) {
+    padding-bottom: 25rem;
+  }
 }
 .section-barry p {
   color: $white;
@@ -52,6 +66,10 @@
   margin-bottom: 1.5rem;
   &:not(:last-child) {
     margin-top: 5rem;
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
+
   }
 }
 

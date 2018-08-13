@@ -16,10 +16,15 @@
     position: absolute;
     left: -5%;
     top: 50%;
+    @include respond(phone) {
+      font-size: 1;
+      left: -10%;
+    }
   }
   &__address a {
+    text-decoration: none;
     opacity: 0.1;
-    color: $white
+    color: $white;
   }
 }
 
@@ -29,6 +34,10 @@
   margin-top: 6rem;
   color: $white;
   letter-spacing: .2rem;
+  @include respond(phone) {
+    margin-top: 3rem;
+    padding: 0 5rem;
+  }
   &__primary a{
     color: $blue; 
     text-decoration: none;

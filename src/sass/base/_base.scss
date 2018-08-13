@@ -11,8 +11,22 @@ THIS DEFINES WHAT 1 REM SHOULD BE */
 
 html {
   font-size: 62.5%; 
-  min-width: 35rem;
+  // min-width: 35rem;
   font-family: $font;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; 
+  }
+  @include respond(tab-port) {
+    font-size: 50%; 
+  }
+  @include respond(phone) {
+    font-size: 30%; 
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; 
+  }
+
 }
 /* 
 <--! power of inherentance --> */
