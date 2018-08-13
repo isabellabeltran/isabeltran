@@ -71,6 +71,9 @@
         @include respond(phone) {
           transform: none;
         }
+        @include respond(tab-port) {
+          transform: none;
+        }
       }
     }
   }
