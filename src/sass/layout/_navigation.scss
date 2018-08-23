@@ -56,6 +56,9 @@
     text-align: right;
     top: 20rem;
     width: 100%;
+    @include respond(phone) {
+      top: 15rem;
+    }
   }
   &__item {
     margin: 3rem;
@@ -81,6 +84,9 @@
   }
   &__checkbox:checked ~ &__background {
     transform: scale(23);
+    @include respond(phone) {
+      transform: scale(14);
+    }
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1; 
