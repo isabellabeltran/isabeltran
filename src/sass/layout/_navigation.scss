@@ -53,7 +53,8 @@
   &__list {
     @include absCenter; 
     list-style: none; 
-    text-align: center;
+    text-align: right;
+    top: 20rem;
     width: 100%;
   }
   &__item {
@@ -79,7 +80,7 @@
     }
   }
   &__checkbox:checked ~ &__background {
-    transform: scale(100);
+    transform: scale(23);
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1; 
