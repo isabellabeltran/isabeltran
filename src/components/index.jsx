@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Greeting from './Greeting.jsx';
+import Navigation from './Navigation.jsx';
 import About from './About.jsx';
 import Barry from './Barry.jsx';
 import Projects from './Projects.jsx';
@@ -20,6 +21,7 @@ export default class extends Component {
           <Greeting /> 
         </header>
         <main>
+          <Navigation /> 
           <section id="about">
             <About /> 
           </section>
