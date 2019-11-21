@@ -1,9 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const MinifyPlugin = require("babel-minify-webpack-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -31,30 +29,6 @@ module.exports = env => {
           ],
           exclude: /node_modules/
         },
-        // {
-        //   test: /\.css$/,
-        //   use: ExtractTextPlugin.extract({
-        //     fallback: "style-loader",
-        //     use: {
-        //       loader: "css-loader",
-        //       options: {
-        //         minimize: true
-        //       }
-        //     }
-        //   })
-        // },
-        // {
-        //   test: /\.(sass|scss)$/,
-        //   use:  ExtractTextPlugin.extract({
-        //     fallback: "style-loader",
-        //     use: {
-        //       loader: "sass-loader",
-        //       options: {
-        //         minimize: true
-        //       }
-        //     }
-        //   })
-        // },
         {
           test: /\.css$/,
           use: [
@@ -70,7 +44,6 @@ module.exports = env => {
         {
           test: /\.(sass|scss)$/,
           use: [
-            // fallback to style-loader in development
             process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
             "css-loader",
             "sass-loader"
@@ -93,7 +66,6 @@ module.exports = env => {
             {
               loader: "file-loader",
               options: {
-                //Images folder in the src directory 
                 name: "images/[name].[ext]"
               }
             }
@@ -105,7 +77,6 @@ module.exports = env => {
             {
               loader: "file-loader",
               options: {
-                //Images folder in the src directory 
                 name: "videos/[name].[ext]"
               }
             }
@@ -114,7 +85,6 @@ module.exports = env => {
       ]
     },
     plugins: [
-      // new ExtractTextPlugin("[name].css"),
       new OptimizeCSSAssetsPlugin({
         assetNameRegExp: /\.css$/g,
         cssProcessor: require("cssnano"),
